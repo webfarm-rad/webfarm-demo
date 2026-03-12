@@ -253,4 +253,71 @@
     });
   }
 
+  /* ==========================================================================
+     10. FAQ Accordion
+     ========================================================================== */
+  var faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(function (item) {
+    var question = item.querySelector('.faq-item__question');
+    if (!question) return;
+
+    question.addEventListener('click', function () {
+      var isActive = item.classList.contains('active');
+
+      /* Close all other items */
+      faqItems.forEach(function (other) {
+        if (other !== item) {
+          other.classList.remove('active');
+          var btn = other.querySelector('.faq-item__question');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      /* Toggle current */
+      item.classList.toggle('active');
+      question.setAttribute('aria-expanded', !isActive ? 'true' : 'false');
+    });
+  });
+
+  /* ==========================================================================
+     11. Floating Multi-Contact Widget
+     ========================================================================== */
+  var floatContact = document.getElementById('float-contact');
+  var floatTrigger = document.getElementById('float-contact-trigger');
+
+  if (floatTrigger && floatContact) {
+    floatTrigger.addEventListener('click', function () {
+      floatContact.classList.toggle('active');
+    });
+
+    /* Close when clicking outside */
+    document.addEventListener('click', function (e) {
+      if (!floatContact.contains(e.target)) {
+        floatContact.classList.remove('active');
+      }
+    });
+  }
+
+  /* ==========================================================================
+     12. Sticky Mobile CTA Bar — show after scrolling past hero
+     ========================================================================== */
+  var mobileCta = document.getElementById('mobile-cta');
+
+  if (mobileCta) {
+    function handleMobileCta() {
+      var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+      var heroHeight = document.getElementById('hero') ? document.getElementById('hero').offsetHeight : 600;
+
+      if (scrollY > heroHeight * 0.7) {
+        mobileCta.classList.add('mobile-cta--visible');
+      } else {
+        mobileCta.classList.remove('mobile-cta--visible');
+      }
+    }
+
+    window.addEventListener('scroll', handleMobileCta, { passive: true });
+    handleMobileCta();
+  }
+
 })();
