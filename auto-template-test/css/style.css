@@ -302,6 +302,11 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 20px rgba(0, 136, 204, 0.35);
 }
 
+.btn--sm {
+  padding: 10px 22px;
+  font-size: var(--fs-xs);
+}
+
 .btn--lg {
   padding: 16px 40px;
   font-size: var(--fs-base);
@@ -862,6 +867,66 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--fs-sm);
   color: var(--color-muted);
   line-height: 1.6;
+}
+
+/* ---------- Process Steps ---------- */
+#process {
+  background: var(--color-light-bg) url('../img/tools.jpeg') center / cover no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(248, 249, 250, 0.93);
+}
+
+.process__grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.process-step {
+  flex: 1;
+  text-align: center;
+  padding: 0 16px;
+  max-width: 220px;
+}
+
+.process-step__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  margin: 0 auto 16px;
+  box-shadow: var(--shadow-green);
+}
+
+.process-step__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.process-step__text {
+  font-size: var(--fs-sm);
+  color: #666;
+  line-height: 1.5;
+}
+
+.process-step__arrow {
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  flex-shrink: 0;
 }
 
 /* ---------- About ---------- */
@@ -1649,6 +1714,21 @@ h1, h2, h3, h4, h5, h6 {
     gap: 16px;
   }
 
+  /* Process */
+  .process__grid {
+    flex-wrap: wrap;
+    gap: 24px 0;
+  }
+
+  .process-step__arrow {
+    display: none;
+  }
+
+  .process-step {
+    flex: 0 0 33.33%;
+    max-width: none;
+  }
+
   /* About */
   .about__grid {
     grid-template-columns: 1fr;
@@ -1783,6 +1863,18 @@ h1, h2, h3, h4, h5, h6 {
 
   .services-panel__title {
     font-size: var(--fs-lg);
+  }
+
+  /* Process */
+  .process__grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .process-step {
+    flex: none;
+    max-width: 300px;
   }
 
   /* Why */

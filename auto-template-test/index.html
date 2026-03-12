@@ -419,6 +419,52 @@
         </div>
     </section>
 
+    <!-- ========== PROCESS ========== -->
+    <section class="section" id="process">
+        <div class="container">
+            <div class="section__header scroll-hidden">
+                <span class="section__label">Простая схема</span>
+                <h2 class="section__title">Как мы работаем</h2>
+            </div>
+
+            <div class="process__grid">
+                <div class="process-step scroll-hidden">
+                    <span class="process-step__number">1</span>
+                    <h3 class="process-step__title">Вы звоните или пишете</h3>
+                    <p class="process-step__text">Опишите проблему по телефону или в WhatsApp. Подскажем, срочно ли ехать.</p>
+                </div>
+                <div class="process-step__arrow scroll-hidden"><i class="fas fa-chevron-right"></i></div>
+
+                <div class="process-step scroll-hidden">
+                    <span class="process-step__number">2</span>
+                    <h3 class="process-step__title">Бесплатная диагностика</h3>
+                    <p class="process-step__text">Приезжаете — ставим на подъёмник, подключаем сканер. Находим причину.</p>
+                </div>
+                <div class="process-step__arrow scroll-hidden"><i class="fas fa-chevron-right"></i></div>
+
+                <div class="process-step scroll-hidden">
+                    <span class="process-step__number">3</span>
+                    <h3 class="process-step__title">Согласуем цену</h3>
+                    <p class="process-step__text">Называем точную стоимость. Без сюрпризов. Не начинаем, пока вы не одобрите.</p>
+                </div>
+                <div class="process-step__arrow scroll-hidden"><i class="fas fa-chevron-right"></i></div>
+
+                <div class="process-step scroll-hidden">
+                    <span class="process-step__number">4</span>
+                    <h3 class="process-step__title">Ремонтируем</h3>
+                    <p class="process-step__text">Делаем работу. Присылаем фото в WhatsApp на каждом этапе.</p>
+                </div>
+                <div class="process-step__arrow scroll-hidden"><i class="fas fa-chevron-right"></i></div>
+
+                <div class="process-step scroll-hidden">
+                    <span class="process-step__number">5</span>
+                    <h3 class="process-step__title">Забираете авто</h3>
+                    <p class="process-step__text">Проверяете результат. Получаете гарантию 12 месяцев на работу и запчасти.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ========== ABOUT ========== -->
     <section class="section" id="about">
         <div class="container">
@@ -430,13 +476,13 @@
                 </div>
 
                 <div class="about__content scroll-hidden">
-                    <span class="about__label">О нашем сервисе</span>
-                    <h2 class="about__title">Знаем автомобили изнутри</h2>
+                    <span class="about__label">О нас коротко</span>
+                    <h2 class="about__title">Ремонтируем — как для себя</h2>
                     <p class="about__text">
-                        АвтоМастер Плюс — это автосервис в Краснодар, которому доверяют тысячи автовладельцев. За 12 лет работы мы накопили опыт ремонта автомобилей всех марок — от отечественных до премиальных европейских и японских брендов.
+                        Мы работаем в Краснодар уже 12 лет. Начинали с одного подъёмника, сейчас у нас полноценная мастерская. Берёмся за любые марки — от ВАЗов до немцев. Если не можем сделать сами — честно скажем и подскажем, куда обратиться.
                     </p>
                     <p class="about__text">
-                        Наша мастерская оснащена профессиональным оборудованием для диагностики и ремонта. Каждый мастер проходит регулярное обучение и имеет узкую специализацию — это позволяет решать даже самые сложные задачи.
+                        Главное правило: не делаем того, что не нужно. Если можно подождать с заменой — скажем. Если ехать опасно — тоже скажем прямо. Присылаем фото в WhatsApp, чтобы вы видели, за что платите.
                     </p>
 
                     <div class="about__stats">
@@ -539,9 +585,11 @@
                 <a href="https://wa.me/78612345678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
+                <!-- IF:telegram_url -->
                 <a href="https://t.me/avtomaster_plus" class="btn btn--telegram btn--lg" target="_blank" rel="noopener">
                     <i class="fab fa-telegram"></i> Telegram
                 </a>
+                <!-- /IF:telegram_url -->
                 <a href="tel:+78612345678" class="btn btn--outline btn--lg">
                     <i class="fas fa-phone"></i> Позвонить
                 </a>
@@ -615,12 +663,16 @@
                         <a href="https://wa.me/78612345678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" class="footer__social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
+                        <!-- IF:telegram_url -->
                         <a href="https://t.me/avtomaster_plus" class="footer__social-link" target="_blank" rel="noopener" aria-label="Telegram">
                             <i class="fab fa-telegram"></i>
                         </a>
+                        <!-- /IF:telegram_url -->
+                        <!-- IF:vk_url -->
                         <a href="https://vk.com/avtomaster_plus" class="footer__social-link" target="_blank" rel="noopener" aria-label="ВКонтакте">
                             <i class="fab fa-vk"></i>
                         </a>
+                        <!-- /IF:vk_url -->
                     </div>
                 </div>
 
@@ -653,7 +705,7 @@
             </div>
 
             <div class="footer__bottom">
-                <span>&copy; 2024 АвтоМастер Плюс &mdash; Все права защищены</span>
+                <span>&copy; 2025 АвтоМастер Плюс &mdash; Все права защищены</span>
                 <a href="#">Политика конфиденциальности</a>
             </div>
         </div>
@@ -677,7 +729,7 @@
             </button>
             <h3 class="modal__title">Заказать звонок</h3>
             <p class="modal__desc">Оставьте свои данные — перезвоним в течение 15 минут</p>
-            <form class="modal__form" id="callback-form" data-whatsapp="https://wa.me/78612345678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5">
+            <form class="modal__form" id="callback-form" data-whatsapp-base="https://wa.me/78612345678">
                 <input type="text" name="name" class="modal__input" placeholder="Ваше имя" required autocomplete="name">
                 <input type="tel" name="phone" class="modal__input" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
                 <button type="submit" class="modal__submit">

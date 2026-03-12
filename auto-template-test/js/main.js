@@ -243,8 +243,8 @@
         'Здравствуйте! Меня зовут ' + name + '. Мой номер: ' + phone + '. Хочу записаться на диагностику.'
       );
 
-      /* Use the whatsapp URL from data attribute or fallback */
-      var waBase = modalForm.getAttribute('data-whatsapp') || 'https://wa.me/';
+      /* Use the base whatsapp URL (without query params) */
+      var waBase = modalForm.getAttribute('data-whatsapp-base') || 'https://wa.me/';
       var waUrl = waBase + '?text=' + message;
 
       window.open(waUrl, '_blank');
