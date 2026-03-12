@@ -30,7 +30,7 @@
       "telephone": "+78612345678",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "ул. Красная, д. 145",
+        "streetAddress": "ул. Красная, 100",
         "addressLocality": "Краснодар",
         "addressRegion": "Краснодарский край",
         "postalCode": "350000",
@@ -38,14 +38,14 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "45.0355",
-        "longitude": "38.9753"
+        "latitude": "45.035",
+        "longitude": "38.975"
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "08:00",
-        "closes": "21:00"
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
       },
       "priceRange": "$$",
       "aggregateRating": {
@@ -69,6 +69,7 @@
             <nav class="header__nav">
                 <a href="#services" class="header__link">Услуги</a>
                 <a href="#about" class="header__link">О нас</a>
+                <a href="#gallery" class="header__link">Работы</a>
                 <a href="#reviews" class="header__link">Отзывы</a>
                 <a href="#contacts" class="header__link">Контакты</a>
             </nav>
@@ -90,6 +91,7 @@
     <div class="mobile-menu">
         <a href="#services" class="mobile-menu__link">Услуги</a>
         <a href="#about" class="mobile-menu__link">О нас</a>
+        <a href="#gallery" class="mobile-menu__link">Работы</a>
         <a href="#reviews" class="mobile-menu__link">Отзывы</a>
         <a href="#contacts" class="mobile-menu__link">Контакты</a>
         <a href="tel:+78612345678" class="mobile-menu__phone">
@@ -99,23 +101,23 @@
 
     <!-- ========== HERO ========== -->
     <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero__grid">
-                <div class="hero__content">
-                    <span class="hero__label">Автосервис в Краснодар</span>
-                    <h1 class="hero__title">Профессиональный ремонт авто всех марок</h1>
-                    <p class="hero__subtitle">Честная диагностика, оригинальные запчасти, гарантия 12 месяцев на все работы</p>
-                    <div class="hero__actions">
-                        <a href="#booking" class="btn btn--primary btn--lg">Записаться на ТО</a>
-                        <a href="https://wa.me/78612345678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
-                            <i class="fab fa-whatsapp"></i> Написать в WhatsApp
-                        </a>
-                    </div>
-                </div>
-                <div class="hero__image">
-                    <!-- ЗАМЕНИТЬ: фото реального автосервиса -->
-                    <img src="img/hero.jpeg" alt="Автосервис АвтоМастер Плюс" width="640" height="480" loading="eager">
-                </div>
+        <!-- ЗАМЕНИТЬ: фото реального автосервиса -->
+        <div class="hero__bg" style="background-image: url('img/hero-bg.jpeg')"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__inner">
+            <span class="hero__label">Автосервис в Краснодар</span>
+            <h1 class="hero__title">Ремонт авто<br>без лишних навязываний</h1>
+            <p class="hero__subtitle">Бесплатная диагностика. Оригинальные запчасти. Гарантия 12 месяцев. Фото-отчёт каждого этапа в WhatsApp.</p>
+            <div class="hero__actions">
+                <a href="#booking" class="btn btn--primary btn--lg">Записаться на диагностику</a>
+                <a href="https://wa.me/78612345678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" class="btn btn--outline btn--lg" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> Написать
+                </a>
+            </div>
+            <div class="hero__features">
+                <div class="hero__feature"><i class="fas fa-check"></i> Все марки авто</div>
+                <div class="hero__feature"><i class="fas fa-check"></i> Без выходных</div>
+                <div class="hero__feature"><i class="fas fa-check"></i> Рейтинг 4.8★</div>
             </div>
         </div>
     </section>
@@ -433,28 +435,28 @@
                     <h3 class="process-step__title">Вы звоните или пишете</h3>
                     <p class="process-step__text">Опишите проблему по телефону или в WhatsApp. Подскажем, срочно ли ехать.</p>
                 </div>
-                <div class="process-step__arrow scroll-hidden"><i class="fas fa-chevron-right"></i></div>
+
 
                 <div class="process-step scroll-hidden">
                     <span class="process-step__number">2</span>
                     <h3 class="process-step__title">Бесплатная диагностика</h3>
                     <p class="process-step__text">Приезжаете — ставим на подъёмник, подключаем сканер. Находим причину.</p>
                 </div>
-                <div class="process-step__arrow scroll-hidden"><i class="fas fa-chevron-right"></i></div>
+
 
                 <div class="process-step scroll-hidden">
                     <span class="process-step__number">3</span>
                     <h3 class="process-step__title">Согласуем цену</h3>
                     <p class="process-step__text">Называем точную стоимость. Без сюрпризов. Не начинаем, пока вы не одобрите.</p>
                 </div>
-                <div class="process-step__arrow scroll-hidden"><i class="fas fa-chevron-right"></i></div>
+
 
                 <div class="process-step scroll-hidden">
                     <span class="process-step__number">4</span>
                     <h3 class="process-step__title">Ремонтируем</h3>
                     <p class="process-step__text">Делаем работу. Присылаем фото в WhatsApp на каждом этапе.</p>
                 </div>
-                <div class="process-step__arrow scroll-hidden"><i class="fas fa-chevron-right"></i></div>
+
 
                 <div class="process-step scroll-hidden">
                     <span class="process-step__number">5</span>
@@ -472,7 +474,7 @@
                 <div class="about__image scroll-hidden">
                     <!-- ЗАМЕНИТЬ: фото реального автосервиса изнутри -->
                     <img src="img/about.jpeg" alt="Автосервис АвтоМастер Плюс — мастерская" width="640" height="480" loading="lazy">
-                    <span class="about__badge"><i class="fas fa-check"></i>&nbsp; Работаем с 2012 года</span>
+                    <span class="about__badge"><i class="fas fa-check"></i>&nbsp; Работаем с 2014 года</span>
                 </div>
 
                 <div class="about__content scroll-hidden">
@@ -491,7 +493,7 @@
                             <span class="about-stat__text">авто в месяц</span>
                         </div>
                         <div class="about-stat">
-                            <span class="about-stat__number">8</span>
+                            <span class="about-stat__number">6</span>
                             <span class="about-stat__text">мастеров</span>
                         </div>
                         <div class="about-stat">
@@ -499,6 +501,44 @@
                             <span class="about-stat__text">марки авто</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+    <section class="section section--dark" id="gallery">
+        <div class="container">
+            <div class="section__header scroll-hidden">
+                <span class="section__label">Наши работы</span>
+                <h2 class="section__title">Фото из мастерской</h2>
+                <p class="section__subtitle">Реальные фото ремонта — то, что вы получите</p>
+            </div>
+
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--large scroll-hidden">
+                    <img src="img/gallery-1.jpeg" alt="Ремонт двигателя в АвтоМастер Плюс" width="600" height="400" loading="lazy">
+                    <span class="gallery__caption">Ремонт двигателя</span>
+                </div>
+                <div class="gallery__item scroll-hidden">
+                    <img src="img/gallery-2.jpeg" alt="Диагностика авто в АвтоМастер Плюс" width="600" height="400" loading="lazy">
+                    <span class="gallery__caption">Компьютерная диагностика</span>
+                </div>
+                <div class="gallery__item scroll-hidden">
+                    <img src="img/gallery-3.jpeg" alt="Ремонт ходовой в АвтоМастер Плюс" width="600" height="400" loading="lazy">
+                    <span class="gallery__caption">Ремонт подвески</span>
+                </div>
+                <div class="gallery__item scroll-hidden">
+                    <img src="img/gallery-4.jpeg" alt="Замена тормозов в АвтоМастер Плюс" width="600" height="400" loading="lazy">
+                    <span class="gallery__caption">Тормозная система</span>
+                </div>
+                <div class="gallery__item scroll-hidden">
+                    <img src="img/gallery-5.jpeg" alt="Шиномонтаж в АвтоМастер Плюс" width="600" height="400" loading="lazy">
+                    <span class="gallery__caption">Шиномонтаж и балансировка</span>
+                </div>
+                <div class="gallery__item scroll-hidden">
+                    <img src="img/gallery-6.jpeg" alt="Автосервис АвтоМастер Плюс — мастерская" width="600" height="400" loading="lazy">
+                    <span class="gallery__caption">Наша мастерская</span>
                 </div>
             </div>
         </div>
@@ -585,11 +625,11 @@
                 <a href="https://wa.me/78612345678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
-                <!-- IF:telegram_url -->
+                
                 <a href="https://t.me/avtomaster_plus" class="btn btn--telegram btn--lg" target="_blank" rel="noopener">
                     <i class="fab fa-telegram"></i> Telegram
                 </a>
-                <!-- /IF:telegram_url -->
+                
                 <a href="tel:+78612345678" class="btn btn--outline btn--lg">
                     <i class="fas fa-phone"></i> Позвонить
                 </a>
@@ -611,7 +651,7 @@
                         <div class="contact-item__icon"><i class="fas fa-location-dot"></i></div>
                         <div>
                             <span class="contact-item__label">Адрес</span>
-                            <p class="contact-item__value">г. Краснодар, ул. Красная, д. 145</p>
+                            <p class="contact-item__value">ул. Красная, 100, Краснодар</p>
                         </div>
                     </div>
 
@@ -629,7 +669,7 @@
                         <div class="contact-item__icon"><i class="fas fa-clock"></i></div>
                         <div>
                             <span class="contact-item__label">Режим работы</span>
-                            <p class="contact-item__value">Пн-Вс: 8:00–21:00</p>
+                            <p class="contact-item__value">Пн-Сб: 9:00–20:00, Вс: выходной</p>
                         </div>
                     </div>
 
@@ -646,7 +686,7 @@
 
                 <div class="contacts__map scroll-hidden">
                     <!-- Yandex Maps iframe — replace src with actual embed URL -->
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890&amp;source=constructor&amp;width=100%25&amp;height=400" allowfullscreen loading="lazy" title="АвтоМастер Плюс на карте"></iframe>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A123&amp;source=constructor" allowfullscreen loading="lazy" title="АвтоМастер Плюс на карте"></iframe>
                 </div>
             </div>
         </div>
@@ -663,16 +703,16 @@
                         <a href="https://wa.me/78612345678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" class="footer__social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <!-- IF:telegram_url -->
+                        
                         <a href="https://t.me/avtomaster_plus" class="footer__social-link" target="_blank" rel="noopener" aria-label="Telegram">
                             <i class="fab fa-telegram"></i>
                         </a>
-                        <!-- /IF:telegram_url -->
-                        <!-- IF:vk_url -->
+                        
+                        
                         <a href="https://vk.com/avtomaster_plus" class="footer__social-link" target="_blank" rel="noopener" aria-label="ВКонтакте">
                             <i class="fab fa-vk"></i>
                         </a>
-                        <!-- /IF:vk_url -->
+                        
                     </div>
                 </div>
 
@@ -682,6 +722,7 @@
                         <a href="#services" class="footer__link">Услуги и цены</a>
                         <a href="#why" class="footer__link">Почему мы</a>
                         <a href="#about" class="footer__link">О сервисе</a>
+                        <a href="#gallery" class="footer__link">Наши работы</a>
                         <a href="#reviews" class="footer__link">Отзывы</a>
                         <a href="#contacts" class="footer__link">Контакты</a>
                     </nav>
@@ -691,7 +732,7 @@
                     <h4 class="footer__heading">Контакты</h4>
                     <div class="footer__contact-item">
                         <i class="fas fa-location-dot"></i>
-                        <span>г. Краснодар, ул. Красная, д. 145</span>
+                        <span>ул. Красная, 100, Краснодар</span>
                     </div>
                     <div class="footer__contact-item">
                         <i class="fas fa-phone"></i>
@@ -699,13 +740,13 @@
                     </div>
                     <div class="footer__contact-item">
                         <i class="fas fa-clock"></i>
-                        <span>Пн-Вс: 8:00–21:00</span>
+                        <span>Пн-Сб: 9:00–20:00, Вс: выходной</span>
                     </div>
                 </div>
             </div>
 
             <div class="footer__bottom">
-                <span>&copy; 2025 АвтоМастер Плюс &mdash; Все права защищены</span>
+                <span>&copy; 2026 АвтоМастер Плюс &mdash; Все права защищены</span>
                 <a href="#">Политика конфиденциальности</a>
             </div>
         </div>
