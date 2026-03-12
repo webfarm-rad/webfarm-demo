@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио K-profi: фотографии до и после процедур, реальные результаты наших клиентов.">
+    <title>Наши работы — K-profi | Результаты процедур</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fa/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">K-profi</span>
+                    <span class="logo-tagline">Студия красоты</span>
+                </a>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="about.html" class="nav-link">О студии</a></li>
+                        <li><a href="services.html" class="nav-link">Услуги</a></li>
+                        <li><a href="works.html" class="nav-link active">Наши работы</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="tel:+79281411120" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (928) 141-11-20</span>
+                    </a>
+                    <button class="btn btn-primary btn-callback">Записаться</button>
+                    <button class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh; margin-top: 80px;">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <img src="https://placehold.co/1920x1152/3a2a2b/E8B4B8?text=%D0%9D%D0%B0%D1%88%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B" alt="Наши работы">
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-images"></i>
+                    <span>Портфолио</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="hero-title-main">Наши работы</span>
+                </h1>
+
+                <p class="hero-description">
+                    Реальные результаты наших клиентов — лучшее доказательство эффективности процедур
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-subtitle">Результаты процедур</span>
+                <h2 class="section-title">Фотографии до и после</h2>
+                <p class="section-description">
+                    Убедитесь в эффективности наших процедур на примере реальных результатов
+                </p>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="laser">Лазерная эпиляция</button>
+                <button class="filter-btn" data-filter="facial">Уход за лицом</button>
+                <button class="filter-btn" data-filter="body">Уход за телом</button>
+                <button class="filter-btn" data-filter="injections">Инъекционная косметология</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="laser">
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%9B%D0%B0%D0%B7%D0%B5%D1%80%D0%BD%D0%B0%D1%8F%20%D1%8D%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D1%8F" alt="Лазерная эпиляция">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Лазерная эпиляция</h3>
+                            <p class="portfolio-description">Зона подмышек, 4 процедуры</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="facial">
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%A7%D0%B8%D1%81%D1%82%D0%BA%D0%B0%20%D0%BB%D0%B8%D1%86%D0%B0" alt="Чистка лица">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Комбинированная чистка лица</h3>
+                            <p class="portfolio-description">Мгновенный результат</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="facial">
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%9F%D0%B8%D0%BB%D0%B8%D0%BD%D0%B3" alt="Пилинг">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Химический пилинг</h3>
+                            <p class="portfolio-description">Результат через 2 недели</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="laser">
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%AD%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D1%8F%20%D0%BD%D0%BE%D0%B3" alt="Эпиляция ног">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Лазерная эпиляция ног</h3>
+                            <p class="portfolio-description">После 5 процедур</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="injections">
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%91%D0%B8%D0%BE%D1%80%D0%B5%D0%B2%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F" alt="Биоревитализация">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Биоревитализация</h3>
+                            <p class="portfolio-description">Курс из 3 процедур</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="body">
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%9C%D0%B0%D1%81%D1%81%D0%B0%D0%B6" alt="Массаж">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Антицеллюлитный массаж</h3>
+                            <p class="portfolio-description">Курс из 10 процедур</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="facial">
+                    <div class="portfolio-image">
+                        <img src="img/photo-1616394584738-fc6e612e71b9.jpg" alt="Уход за лицом">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Anti-age уход</h3>
+                            <p class="portfolio-description">Регулярный уход, 2 месяца</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="laser">
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%AD%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D1%8F%20%D0%B1%D0%B8%D0%BA%D0%B8%D0%BD%D0%B8" alt="Эпиляция бикини">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Глубокое бикини</h3>
+                            <p class="portfolio-description">После 6 процедур</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="injections">
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%B0" alt="Контурная пластика">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Увеличение губ</h3>
+                            <p class="portfolio-description">Естественный результат, 1 мл</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-subtitle">Отзывы</span>
+                <h2 class="section-title">Что говорят наши клиенты</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://i.pravatar.cc/100?img=1" alt="Елена">
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-name">Елена Соколова</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Делала лазерную эпиляцию в K-profi, очень довольна результатом! Процедура практически безболезненная, а эффект виден уже после первого сеанса. Девочки профессионалы своего дела.
+                    </p>
+                    <div class="review-service">Лазерная эпиляция</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://i.pravatar.cc/100?img=5" alt="Анна">
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-name">Анна Петрова</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Прекрасная студия! Ходила на чистку лица и химический пилинг. Косметолог Мария настоящий профессионал, подобрала идеальный уход для моей кожи.
+                    </p>
+                    <div class="review-service">Уход за лицом</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://i.pravatar.cc/100?img=10" alt="Мария">
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-name">Мария Иванова</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Искала студию для биоревитализации и не ошиблась с выбором. Процедуру провели на высшем уровне, кожа сразу стала более увлажненной и подтянутой.
+                    </p>
+                    <div class="review-service">Инъекционная косметология</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="cta-title">Хотите такой же результат?</h2>
+                    <p class="cta-description">
+                        Запишитесь на процедуру и убедитесь в эффективности нашей работы
+                    </p>
+                    <ul class="cta-features">
+                        <li><i class="fas fa-check"></i> Бесплатная консультация</li>
+                        <li><i class="fas fa-check"></i> Скидка 20% на первую процедуру</li>
+                        <li><i class="fas fa-check"></i> Гарантия результата</li>
+                    </ul>
+                </div>
+                <div class="cta-form-wrapper">
+                    <form class="cta-form" id="ctaForm">
+                        <h3 class="form-title">Записаться</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" required>
+                                <option value="">Интересующая услуга</option>
+                                <option value="laser">Лазерная эпиляция</option>
+                                <option value="facial">Уход за лицом</option>
+                                <option value="body">Уход за телом</option>
+                                <option value="injections">Инъекционная косметология</option>
+                                <option value="consultation">Консультация</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-large btn-white btn-full">
+                            <span>Записаться</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <p class="form-privacy">
+                            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">K-profi</span>
+                        <span class="logo-tagline">Студия красоты</span>
+                    </a>
+                    <p class="footer-description">
+                        Профессиональная косметология и лазерная эпиляция в центре Ростова-на-Дону
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://vk.com/kprofi" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me/kprofi" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/79281411120" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/kprofi" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О студии</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="works.html">Наши работы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#laser">Лазерная эпиляция</a></li>
+                        <li><a href="services.html#facial">Уход за лицом</a></li>
+                        <li><a href="services.html#body">Уход за телом</a></li>
+                        <li><a href="services.html#injections">Инъекционная косметология</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>пер. Семашко, 113<br>Ростов-на-Дону</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+79281411120">+7 (928) 141-11-20</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Вс: 9:00 - 21:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 K-profi. Все права защищены.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Публичная оферта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Callback Modal -->
+    <div class="modal" id="callbackModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-header">
+                <h3 class="modal-title">Записаться на процедуру</h3>
+                <p class="modal-description">Оставьте ваши контакты, и мы свяжемся с вами в ближайшее время</p>
+            </div>
+
+            <form class="modal-form" id="callbackForm">
+                <div class="form-group">
+                    <label class="form-label">Ваше имя</label>
+                    <input type="text" class="form-input" placeholder="Введите ваше имя" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Телефон</label>
+                    <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Интересующая услуга</label>
+                    <select class="form-input" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="laser">Лазерная эпиляция</option>
+                        <option value="facial">Уход за лицом</option>
+                        <option value="body">Уход за телом</option>
+                        <option value="injections">Инъекционная косметология</option>
+                        <option value="consultation">Консультация</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-large btn-primary btn-full">
+                    <span>Отправить заявку</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <p class="form-privacy">
+                    Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/79281411120" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=3"></script>
+    <script src="js/portfolio.js"></script>
+
+</body>
+</html>

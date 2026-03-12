@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакты мастерской ремонта обуви на Гагарина в Самаре. Адрес, телефон, режим работы, карта проезда.">
+    <title>Контакты — Ремонт обуви на Гагарина</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fa/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contacts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .contact-info-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-info-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .contact-details p {
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .contact-details a {
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: var(--transition-base);
+        }
+
+        .contact-details a:hover {
+            color: var(--primary-dark);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 500px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 40px;
+        }
+
+        .contact-form-wrapper {
+            background: var(--bg-cream);
+            padding: 50px;
+            border-radius: 16px;
+        }
+
+        .contact-form-wrapper h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-form-wrapper p {
+            color: var(--text-secondary);
+            margin-bottom: 35px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .working-hours {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .working-hours h3 {
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+
+        .hours-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hours-day {
+            font-weight: 600;
+        }
+
+        .hours-time {
+            opacity: 0.95;
+        }
+
+        @media (max-width: 992px) {
+            .contacts-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-wrapper {
+                padding: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-contacts">
+                        <a href="tel:+79272073428" class="header-phone">
+                            <i class="fas fa-phone"></i>
+                            +7 (927) 207-34-28
+                        </a>
+                        <span class="header-hours">
+                            <i class="far fa-clock"></i>
+                            Пн-Пт: 9:00 — 19:00
+                        </span>
+                    </div>
+                    <div class="header-social">
+                        <a href="https://vk.com" target="_blank" aria-label="ВКонтакте">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/79272073428" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-shoe-prints"></i>
+                        <div class="logo-text">
+                            <span class="logo-title">Ремонт обуви</span>
+                            <span class="logo-subtitle">на Гагарина</span>
+                        </div>
+                    </a>
+
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="works.html">Наши работы</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                    </ul>
+
+                    <button class="cta-btn" id="ctaBtn">
+                        <i class="fas fa-phone-volume"></i>
+                        Заказать звонок
+                    </button>
+
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh; padding: 120px 0 80px;">
+        <div class="hero-bg">
+            <img src="https://placehold.co/1920x1152/3E352F/8B5A3C?text=%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B" alt="Контакты">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" style="font-size: 3.5rem;">Контакты</h1>
+                <p class="hero-subtitle">Мы всегда рады вам помочь. Приезжайте, звоните или пишите.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section style="background: #ffffff; padding: 80px 0;">
+        <div class="container">
+            <div class="contacts-grid">
+                <div class="contact-info-card" data-aos="fade-right">
+                    <h3>Контактная информация</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Адрес мастерской</h4>
+                            <p>ул. Гагарина, 42/1<br>Самара, 443000</p>
+                            <a href="https://yandex.com/maps/org/remont_obuvi/1186337819/" target="_blank">Открыть на карте</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <p><a href="tel:+79272073428">+7 (927) 207-34-28</a></p>
+                            <p style="font-size: 0.9rem; margin-top: 5px;">Звоните в рабочее время</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/79272073428" target="_blank">Написать в WhatsApp</a></p>
+                            <p style="font-size: 0.9rem; margin-top: 5px;">Отвечаем в течение 15 минут</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Социальные сети</h4>
+                            <p>
+                                <a href="https://vk.com" target="_blank">ВКонтакте</a> •
+                                <a href="https://t.me" target="_blank">Telegram</a>
+                            </p>
+                            <p style="font-size: 0.9rem; margin-top: 5px;">Следите за новостями и акциями</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="working-hours" data-aos="fade-left">
+                    <h3>Режим работы</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="hours-day">Понедельник</span>
+                            <span class="hours-time">9:00 — 19:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Вторник</span>
+                            <span class="hours-time">9:00 — 19:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Среда</span>
+                            <span class="hours-time">9:00 — 19:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Четверг</span>
+                            <span class="hours-time">9:00 — 19:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Пятница</span>
+                            <span class="hours-time">9:00 — 19:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Суббота</span>
+                            <span class="hours-time">10:00 — 16:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Воскресенье</span>
+                            <span class="hours-time">Выходной</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="background: var(--bg-light); padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Как нас найти</span>
+                <h2 class="section-title">Наше расположение</h2>
+                <p class="section-subtitle">
+                    Мы находимся в центре города на ул. Гагарина. Удобный проезд на автомобиле и общественном транспорте.
+                </p>
+            </div>
+
+            <div class="map-container" data-aos="zoom-in">
+                <div style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.com/maps/org/remont_obuvi/1186337819/" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ремонт обуви</a>
+                    <a href="https://yandex.com/maps/51/samara/category/shoe_repair/184106394/" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ремонт обуви в Самаре</a>
+                    <iframe src="https://yandex.com/map-widget/v1/?ll=50.100202%2C53.195538&mode=poi&poi%5Bpoint%5D=50.100202%2C53.195538&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1186337819&z=17" width="100%" height="500" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+            </div>
+
+            <div class="materials-grid" style="margin-top: 50px;">
+                <div class="material-card" data-aos="fade-up">
+                    <div class="material-icon" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-light));">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="material-title">На автомобиле</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Удобный подъезд с ул. Гагарина. Есть бесплатная парковка рядом с мастерской.
+                    </p>
+                </div>
+
+                <div class="material-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="material-icon" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-light));">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3 class="material-title">На общественном транспорте</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Остановка "Гагарина" в 2 минутах ходьбы. Автобусы: 24, 37, 42. Маршрутки: 3, 15, 89.
+                    </p>
+                </div>
+
+                <div class="material-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="material-icon" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-light));">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3 class="material-title">Пешком</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        От станции метро "Гагаринская" — 5 минут пешком. Удобное расположение в центре района.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section style="background: #ffffff; padding: 80px 0;">
+        <div class="container">
+            <div class="contact-form-wrapper" data-aos="fade-up">
+                <h3>Остались вопросы?</h3>
+                <p>Напишите нам, и мы свяжемся с вами в ближайшее время через WhatsApp.</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Ваше имя *</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Телефон *</label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactService">Интересующая услуга</label>
+                        <select id="contactService" name="service" style="width: 100%; padding: 15px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; font-family: inherit;">
+                            <option value="">Выберите услугу...</option>
+                            <option value="naboyki">Замена набоек</option>
+                            <option value="rastyazhka">Растяжка обуви</option>
+                            <option value="molnii">Ремонт молний</option>
+                            <option value="pokraska">Покраска обуви</option>
+                            <option value="chistka">Химчистка</option>
+                            <option value="restavratsiya">Полная реставрация</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Ваше сообщение</label>
+                        <textarea id="contactMessage" name="message" class="contact-form"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                        <i class="fab fa-whatsapp"></i>
+                        Отправить в WhatsApp
+                    </button>
+
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 20px; text-align: center;">
+                        Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Приходите к нам!</h2>
+                <p class="cta-text">
+                    Мы ждём вас по адресу: ул. Гагарина, 42/1, Самара<br>
+                    Работаем с понедельника по субботу.
+                </p>
+                <div class="cta-buttons">
+                    <a href="tel:+79272073428" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone"></i>
+                        +7 (927) 207-34-28
+                    </a>
+                    <a href="https://yandex.com/maps/org/remont_obuvi/1186337819/" target="_blank" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Открыть на карте
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-shoe-prints"></i>
+                        <div class="logo-text">
+                            <span class="logo-title">Ремонт обуви</span>
+                            <span class="logo-subtitle">на Гагарина</span>
+                        </div>
+                    </a>
+                    <p class="footer-description">
+                        Профессиональный ремонт обуви в Самаре с 2011 года. Опытные мастера, качественные материалы, гарантия на все виды работ.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://vk.com" target="_blank" aria-label="ВКонтакте">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/79272073428" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="works.html">Наши работы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#naboyki">Замена набоек</a></li>
+                        <li><a href="services.html#rastyazhka">Растяжка обуви</a></li>
+                        <li><a href="services.html#molnii">Ремонт молний</a></li>
+                        <li><a href="services.html#pokraska">Покраска обуви</a></li>
+                        <li><a href="services.html#chistka">Химчистка</a></li>
+                        <li><a href="services.html#restavratsiya">Реставрация</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>ул. Гагарина, 42/1<br>Самара, 443000</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+79272073428">+7 (927) 207-34-28</a>
+                        </li>
+                        <li>
+                            <i class="far fa-clock"></i>
+                            <span>Пн-Пт: 9:00 — 19:00<br>Сб: 10:00 — 16:00<br>Вс: выходной</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ремонт обуви на Гагарина. Все права защищены.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/79272073428" class="whatsapp-float" aria-label="Написать в WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Call Modal -->
+    <div class="modal" id="callModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <i class="fas fa-phone-volume"></i>
+                <h3>Заказать звонок</h3>
+            </div>
+            <div class="modal-body">
+                <p>Оставьте ваш номер телефона, и мы перезвоним вам в ближайшее время.</p>
+                <form class="call-form" id="callForm">
+                    <div class="form-group">
+                        <label for="callName">Ваше имя</label>
+                        <input type="text" id="callName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="callPhone">Телефон</label>
+                        <input type="tel" id="callPhone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-phone"></i>
+                        Заказать звонок
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+    <script>
+        // Contact form handler
+        const contactForm = document.getElementById('contactForm');
+
+        if (contactForm) {
+            const phoneInput = document.getElementById('contactPhone');
+
+            // Phone mask
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+
+                    if (value.length > 0) {
+                        if (value[0] === '8') {
+                            value = '7' + value.substring(1);
+                        }
+
+                        let formatted = '+7';
+
+                        if (value.length > 1) {
+                            formatted += ' (' + value.substring(1, 4);
+                        }
+                        if (value.length >= 4) {
+                            formatted += ') ' + value.substring(4, 7);
+                        }
+                        if (value.length >= 7) {
+                            formatted += '-' + value.substring(7, 9);
+                        }
+                        if (value.length >= 9) {
+                            formatted += '-' + value.substring(9, 11);
+                        }
+
+                        e.target.value = formatted;
+                    }
+                });
+            }
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const name = document.getElementById('contactName').value;
+                const phone = document.getElementById('contactPhone').value;
+                const service = document.getElementById('contactService').value;
+                const message = document.getElementById('contactMessage').value;
+
+                // Create WhatsApp message
+                let whatsappMessage = `Здравствуйте! Меня зовут ${name}.\n`;
+                whatsappMessage += `Телефон: ${phone}\n`;
+
+                if (service) {
+                    const serviceNames = {
+                        'naboyki': 'Замена набоек',
+                        'rastyazhka': 'Растяжка обуви',
+                        'molnii': 'Ремонт молний',
+                        'pokraska': 'Покраска обуви',
+                        'chistka': 'Химчистка',
+                        'restavratsiya': 'Полная реставрация',
+                        'other': 'Другое'
+                    };
+                    whatsappMessage += `Интересует: ${serviceNames[service]}\n`;
+                }
+
+                if (message) {
+                    whatsappMessage += `\nСообщение: ${message}`;
+                }
+
+                const whatsappUrl = `https://wa.me/79272073428?text=${encodeURIComponent(whatsappMessage)}`;
+
+                // Open WhatsApp
+                window.open(whatsappUrl, '_blank');
+
+                // Reset form
+                contactForm.reset();
+
+                // Show success message
+                alert('Перенаправляем вас в WhatsApp...');
+            });
+        }
+    </script>
+</body>
+</html>

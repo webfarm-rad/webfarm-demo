@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Услуги стоматологии Апполония в Краснодаре: лечение кариеса, имплантация зубов, виниры, отбеливание, профгигиена, брекеты. Цены и запись онлайн.">
+    <title>Услуги и цены | Стоматология Апполония в Краснодаре</title>
+
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fa/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tooth"></i>
+                    <span>Апполония</span>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="about.html" class="nav-link">О клинике</a>
+                    <a href="services.html" class="nav-link active">Услуги</a>
+                    <a href="works.html" class="nav-link">Наши работы</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+
+                <div class="header-right">
+                    <div class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+79184664484">+7 (918) 466-44-84</a>
+                    </div>
+                    <button class="btn btn-primary" id="appointmentBtn">Записаться</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <img src="https://placehold.co/1920x800/1a3a5c/4A90E2?text=%D0%A3%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D1%81%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8" alt="Услуги стоматологии">
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Наши <span class="highlight">услуги</span></h1>
+                <p class="hero-subtitle">
+                    Полный спектр стоматологических услуг по доступным ценам
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapy Section -->
+    <section class="about" id="therapy" style="padding-top: 100px;">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-label">Терапия</span>
+                    <h2 class="section-title">Лечение кариеса</h2>
+
+                    <p class="about-description">
+                        Лечение кариеса в клинике Апполония — это абсолютно безболезненная процедура благодаря
+                        современной компьютерной анестезии STA. Мы используем немецкие пломбировочные материалы
+                        последнего поколения, которые идеально повторяют естественный цвет зубов.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Без боли</h4>
+                                <p>Компьютерная анестезия STA — самый безболезненный способ обезболивания</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Гарантия 2 года</h4>
+                                <p>На все пломбы предоставляем гарантию 24 месяца</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>За один визит</h4>
+                                <p>Большинство случаев лечим за одно посещение 30-60 минут</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding: 30px; background: var(--bg-light); border-radius: var(--radius-md);">
+                        <h4 style="margin-bottom: 20px;">Прайс-лист терапии:</h4>
+                        <ul style="display: grid; gap: 12px;">
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Лечение кариеса (пломба)</span>
+                                <strong style="color: var(--primary-color);">от 3 500 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Лечение пульпита (1 канал)</span>
+                                <strong style="color: var(--primary-color);">от 5 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Лечение пульпита (3 канала)</span>
+                                <strong style="color: var(--primary-color);">от 12 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>Художественная реставрация</span>
+                                <strong style="color: var(--primary-color);">от 8 000 ₽</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://placehold.co/800x1000/1a3a5c/4A90E2?text=%D0%9B%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D1%80%D0%B8%D0%B5%D1%81%D0%B0" alt="Лечение кариеса">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implants Section -->
+    <section class="about" id="implants" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="about-content" style="grid-template-columns: 1fr 1fr;">
+                <div class="about-image">
+                    <img src="https://placehold.co/800x1000/1a3a5c/4A90E2?text=%D0%98%D0%BC%D0%BF%D0%BB%D0%B0%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B7%D1%83%D0%B1%D0%BE%D0%B2" alt="Имплантация зубов">
+                </div>
+
+                <div class="about-text">
+                    <span class="section-label">Имплантация</span>
+                    <h2 class="section-title">Имплантация зубов</h2>
+
+                    <p class="about-description">
+                        Имплантация — самый надёжный способ восстановления утраченных зубов. Мы работаем с имплантами
+                        премиум-класса Nobel Biocare, Straumann, Astra Tech с пожизненной гарантией. 3D-планирование
+                        обеспечивает идеальное позиционирование имплантов.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Пожизненная гарантия</h4>
+                                <p>На импланты Nobel, Straumann — пожизненная гарантия производителя</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>3D-планирование</h4>
+                                <p>Цифровое моделирование для идеального результата</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>99.7% приживаемость</h4>
+                                <p>Используем импланты мировых лидеров с максимальной приживаемостью</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding: 30px; background: var(--bg-white); border-radius: var(--radius-md);">
+                        <h4 style="margin-bottom: 20px;">Прайс-лист имплантации:</h4>
+                        <ul style="display: grid; gap: 12px;">
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Имплант Nobel Biocare (США)</span>
+                                <strong style="color: var(--primary-color);">от 45 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Имплант Straumann (Швейцария)</span>
+                                <strong style="color: var(--primary-color);">от 50 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Имплант Osstem (Корея)</span>
+                                <strong style="color: var(--primary-color);">от 35 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>Коронка на имплант (керамика)</span>
+                                <strong style="color: var(--primary-color);">от 25 000 ₽</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veneers Section -->
+    <section class="about" id="veneers">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-label">Эстетическая стоматология</span>
+                    <h2 class="section-title">Виниры и реставрация</h2>
+
+                    <p class="about-description">
+                        Голливудская улыбка — это реально! Керамические виниры E-max позволяют за 2-3 визита
+                        кардинально изменить улыбку. Цифровое моделирование даёт возможность увидеть результат
+                        ещё до начала лечения. Виниры не отличить от настоящих зубов.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Керамика E-max</h4>
+                                <p>Прочность и эстетика премиум-класса, толщина 0.3-0.5 мм</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Digital Smile Design</h4>
+                                <p>Цифровое моделирование улыбки — видите результат до начала</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Быстро</h4>
+                                <p>Установка виниров за 2-3 визита, итоговый результат через 2 недели</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding: 30px; background: var(--bg-light); border-radius: var(--radius-md);">
+                        <h4 style="margin-bottom: 20px;">Прайс-лист эстетики:</h4>
+                        <ul style="display: grid; gap: 12px;">
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Винир E-max (керамика)</span>
+                                <strong style="color: var(--primary-color);">от 25 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Композитный винир</span>
+                                <strong style="color: var(--primary-color);">от 12 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Художественная реставрация</span>
+                                <strong style="color: var(--primary-color);">от 8 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>Digital Smile Design (моделирование)</span>
+                                <strong style="color: var(--primary-color);">5 000 ₽</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://placehold.co/800x1000/1a3a5c/4A90E2?text=%D0%92%D0%B8%D0%BD%D0%B8%D1%80%D1%8B" alt="Виниры">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Whitening Section -->
+    <section class="about" id="whitening" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="about-content" style="grid-template-columns: 1fr 1fr;">
+                <div class="about-image">
+                    <img src="https://placehold.co/800x1000/1a3a5c/4A90E2?text=%D0%9E%D1%82%D0%B1%D0%B5%D0%BB%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B7%D1%83%D0%B1%D0%BE%D0%B2" alt="Отбеливание зубов">
+                </div>
+
+                <div class="about-text">
+                    <span class="section-label">Отбеливание</span>
+                    <h2 class="section-title">Отбеливание зубов ZOOM 4</h2>
+
+                    <p class="about-description">
+                        Профессиональное отбеливание системой ZOOM 4 — это безопасный и эффективный способ
+                        осветлить зубы на 8-12 тонов всего за 1 час. Специальный гель не повреждает эмаль,
+                        а результат сохраняется до 2 лет при правильном уходе.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Быстрый результат</h4>
+                                <p>Осветление на 8-12 тонов всего за 1 час</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Безопасно</h4>
+                                <p>ZOOM 4 — самая щадящая система, не повреждает эмаль</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Долгий эффект</h4>
+                                <p>Результат сохраняется до 2 лет</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding: 30px; background: var(--bg-white); border-radius: var(--radius-md);">
+                        <h4 style="margin-bottom: 20px;">Прайс-лист отбеливания:</h4>
+                        <ul style="display: grid; gap: 12px;">
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Отбеливание ZOOM 4</span>
+                                <strong style="color: var(--primary-color);">18 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Домашнее отбеливание (каппы)</span>
+                                <strong style="color: var(--primary-color);">12 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>Отбеливание одного зуба</span>
+                                <strong style="color: var(--primary-color);">1 500 ₽</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hygiene Section -->
+    <section class="about" id="hygiene">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-label">Профилактика</span>
+                    <h2 class="section-title">Профессиональная гигиена</h2>
+
+                    <p class="about-description">
+                        Комплексная чистка зубов — это лучшая профилактика кариеса и заболеваний дёсен.
+                        Рекомендуем проходить процедуру раз в 6 месяцев. Включает ультразвуковую чистку,
+                        Air Flow, полировку и фторирование. Занимает 60 минут.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Комплексный подход</h4>
+                                <p>Ультразвук + Air Flow + полировка + фторирование</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Профилактика</h4>
+                                <p>Предотвращает кариес, пародонтит, гингивит</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Отличный результат</h4>
+                                <p>Зубы становятся светлее на 1-2 тона, свежее дыхание</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding: 30px; background: var(--bg-light); border-radius: var(--radius-md);">
+                        <h4 style="margin-bottom: 20px;">Прайс-лист профгигиены:</h4>
+                        <ul style="display: grid; gap: 12px;">
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Комплексная чистка (полная)</span>
+                                <strong style="color: var(--primary-color);">4 500 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Ультразвуковая чистка</span>
+                                <strong style="color: var(--primary-color);">2 500 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Air Flow</span>
+                                <strong style="color: var(--primary-color);">2 500 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>Фторирование</span>
+                                <strong style="color: var(--primary-color);">1 000 ₽</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="img/photo-1588776814546-1ffcf47267a5.jpg" alt="Профгигиена">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Braces Section -->
+    <section class="about" id="braces" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="about-content" style="grid-template-columns: 1fr 1fr;">
+                <div class="about-image">
+                    <img src="https://placehold.co/800x1000/1a3a5c/4A90E2?text=%D0%91%D1%80%D0%B5%D0%BA%D0%B5%D1%82%D1%8B" alt="Брекеты">
+                </div>
+
+                <div class="about-text">
+                    <span class="section-label">Ортодонтия</span>
+                    <h2 class="section-title">Брекеты и элайнеры</h2>
+
+                    <p class="about-description">
+                        Исправление прикуса — это инвестиция в здоровье и красоту на всю жизнь. Мы предлагаем
+                        металлические, керамические, сапфировые брекеты и прозрачные элайнеры Invisalign.
+                        Врач-ортодонт подберёт оптимальный вариант с учётом ваших пожеланий и бюджета.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Точная диагностика</h4>
+                                <p>3D-сканирование челюстей, цифровое моделирование результата</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-eye-slash"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Незаметные варианты</h4>
+                                <p>Сапфировые брекеты и элайнеры Invisalign — практически незаметны</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Рассрочка 0%</h4>
+                                <p>Оплата в рассрочку до 12 месяцев без переплат</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding: 30px; background: var(--bg-white); border-radius: var(--radius-md);">
+                        <h4 style="margin-bottom: 20px;">Прайс-лист ортодонтии:</h4>
+                        <ul style="display: grid; gap: 12px;">
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Металлические брекеты (1 челюсть)</span>
+                                <strong style="color: var(--primary-color);">от 45 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Керамические брекеты (1 челюсть)</span>
+                                <strong style="color: var(--primary-color);">от 65 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--bg-gray);">
+                                <span>Сапфировые брекеты (1 челюсть)</span>
+                                <strong style="color: var(--primary-color);">от 75 000 ₽</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>Элайнеры Invisalign (курс)</span>
+                                <strong style="color: var(--primary-color);">от 200 000 ₽</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="cta-title">Не знаете, какая услуга вам нужна?</h2>
+                    <p class="cta-subtitle">
+                        Запишитесь на бесплатную консультацию. Врач проведёт осмотр, поставит диагноз и составит
+                        подробный план лечения с прозрачной сметой.
+                    </p>
+                    <ul class="cta-features">
+                        <li><i class="fas fa-check-circle"></i> Консультация и диагностика — бесплатно</li>
+                        <li><i class="fas fa-check-circle"></i> Персональный план лечения</li>
+                        <li><i class="fas fa-check-circle"></i> Рассрочка 0% на все услуги</li>
+                    </ul>
+                </div>
+
+                <div class="cta-form">
+                    <h3>Записаться на консультацию</h3>
+                    <form id="ctaForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="service">
+                                <option value="">Какая услуга интересует?</option>
+                                <option value="therapy">Лечение кариеса</option>
+                                <option value="implants">Имплантация</option>
+                                <option value="veneers">Виниры</option>
+                                <option value="whitening">Отбеливание</option>
+                                <option value="hygiene">Профгигиена</option>
+                                <option value="braces">Брекеты</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Записаться бесплатно
+                        </button>
+                        <p class="form-privacy">
+                            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-tooth"></i>
+                        <span>Апполония</span>
+                    </div>
+                    <p class="footer-description">
+                        Современная стоматологическая клиника в Краснодаре.
+                        Профессиональное лечение зубов с заботой о вашем комфорте.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О клинике</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="works.html">Наши работы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#therapy">Лечение кариеса</a></li>
+                        <li><a href="services.html#implants">Имплантация зубов</a></li>
+                        <li><a href="services.html#veneers">Виниры</a></li>
+                        <li><a href="services.html#whitening">Отбеливание</a></li>
+                        <li><a href="services.html#hygiene">Профгигиена</a></li>
+                        <li><a href="services.html#braces">Брекеты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Краснодар,<br>Ставропольская ул., 26</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+79184664484">+7 (918) 466-44-84</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Вс: 9:00 — 20:00</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/79184664484">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Стоматология "Апполония". Все права защищены.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Appointment Modal -->
+    <div class="modal" id="appointmentModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3 class="modal-title">Записаться на приём</h3>
+            <p class="modal-subtitle">Оставьте ваши контакты, мы перезвоним в течение 15 минут</p>
+
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label>Ваше имя</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Телефон</label>
+                    <input type="tel" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Услуга</label>
+                    <select name="service">
+                        <option value="">Выберите услугу</option>
+                        <option value="consultation">Консультация</option>
+                        <option value="therapy">Лечение кариеса</option>
+                        <option value="implants">Имплантация</option>
+                        <option value="veneers">Виниры</option>
+                        <option value="whitening">Отбеливание</option>
+                        <option value="hygiene">Профгигиена</option>
+                        <option value="braces">Брекеты</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Комментарий</label>
+                    <textarea name="comment" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    Отправить заявку
+                </button>
+                <p class="form-privacy">
+                    Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/79184664484" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Call Button -->
+    <button class="call-btn" id="callBtn">
+        <i class="fas fa-phone"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

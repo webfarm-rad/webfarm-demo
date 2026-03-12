@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kosmos-avto.ru/sitemap.xml

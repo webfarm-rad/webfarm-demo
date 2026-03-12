@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Услуги и цены на ремонт обуви в Самаре. Замена набоек, растяжка, ремонт молний, покраска, химчистка, реставрация. Быстро и качественно.">
+    <title>Услуги и цены — Ремонт обуви на Гагарина</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fa/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .price-table {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 40px;
+        }
+
+        .price-table-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .price-table-header h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .price-table-header p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+        }
+
+        .price-table-body {
+            padding: 0;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition-base);
+        }
+
+        .price-row:last-child {
+            border-bottom: none;
+        }
+
+        .price-row:hover {
+            background: var(--bg-light);
+        }
+
+        .price-service {
+            flex: 1;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .price-value {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            white-space: nowrap;
+            margin-left: 20px;
+        }
+
+        .service-detail {
+            background: var(--bg-cream);
+            padding: 60px 0;
+            margin: 40px 0;
+        }
+
+        .service-detail:nth-child(even) {
+            background: #ffffff;
+        }
+
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .service-detail-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 400px;
+        }
+
+        .service-detail-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .service-detail-content h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .service-detail-content p {
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        .service-detail-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .service-detail-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--text-secondary);
+        }
+
+        .service-detail-list i {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-top: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .service-detail-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .price-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .price-value {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-contacts">
+                        <a href="tel:+79272073428" class="header-phone">
+                            <i class="fas fa-phone"></i>
+                            +7 (927) 207-34-28
+                        </a>
+                        <span class="header-hours">
+                            <i class="far fa-clock"></i>
+                            Пн-Пт: 9:00 — 19:00
+                        </span>
+                    </div>
+                    <div class="header-social">
+                        <a href="https://vk.com" target="_blank" aria-label="ВКонтакте">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/79272073428" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-shoe-prints"></i>
+                        <div class="logo-text">
+                            <span class="logo-title">Ремонт обуви</span>
+                            <span class="logo-subtitle">на Гагарина</span>
+                        </div>
+                    </a>
+
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html" class="active">Услуги</a></li>
+                        <li><a href="works.html">Наши работы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+
+                    <button class="cta-btn" id="ctaBtn">
+                        <i class="fas fa-phone-volume"></i>
+                        Заказать звонок
+                    </button>
+
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh; padding: 120px 0 80px;">
+        <div class="hero-bg">
+            <img src="https://placehold.co/1920x1152/3E352F/8B5A3C?text=%D0%A3%D1%81%D0%BB%D1%83%D0%B3%D0%B8" alt="Услуги">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" style="font-size: 3.5rem;">Услуги и цены</h1>
+                <p class="hero-subtitle">Выполняем все виды ремонта обуви. Честные цены без скрытых наценок.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Overview -->
+    <section style="background: #ffffff; padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Прайс-лист</span>
+                <h2 class="section-title">Стоимость услуг</h2>
+                <p class="section-subtitle">
+                    Актуальные цены на все виды работ. Точная стоимость определяется после осмотра обуви.
+                </p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="price-table" data-aos="fade-up">
+                    <div class="price-table-header">
+                        <h3>Замена набоек и подошв</h3>
+                        <p>Самые популярные услуги</p>
+                    </div>
+                    <div class="price-table-body">
+                        <div class="price-row">
+                            <span class="price-service">Набойки женские (пара)</span>
+                            <span class="price-value">от 300 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Набойки мужские (пара)</span>
+                            <span class="price-value">от 350 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Набойки металлические</span>
+                            <span class="price-value">от 400 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Профилактика подошвы (Topy)</span>
+                            <span class="price-value">от 800 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Замена подошвы полностью</span>
+                            <span class="price-value">от 1500 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table" data-aos="fade-up" data-aos-delay="100">
+                    <div class="price-table-header">
+                        <h3>Растяжка и коррекция формы</h3>
+                        <p>Сделаем обувь комфортной</p>
+                    </div>
+                    <div class="price-table-body">
+                        <div class="price-row">
+                            <span class="price-service">Растяжка в ширину</span>
+                            <span class="price-value">от 400 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Растяжка в длину</span>
+                            <span class="price-value">от 500 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Растяжка голенища сапог</span>
+                            <span class="price-value">от 600 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Установка супинаторов</span>
+                            <span class="price-value">от 350 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table" data-aos="fade-up" data-aos-delay="200">
+                    <div class="price-table-header">
+                        <h3>Ремонт молний и фурнитуры</h3>
+                        <p>Восстановление застёжек</p>
+                    </div>
+                    <div class="price-table-body">
+                        <div class="price-row">
+                            <span class="price-service">Замена бегунка на молнии</span>
+                            <span class="price-value">от 300 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Замена язычка молнии</span>
+                            <span class="price-value">от 150 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Замена молнии полностью</span>
+                            <span class="price-value">от 800 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Ремонт шнуровки</span>
+                            <span class="price-value">от 250 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Замена пряжки, застёжки</span>
+                            <span class="price-value">от 400 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table" data-aos="fade-up">
+                    <div class="price-table-header">
+                        <h3>Покраска и восстановление цвета</h3>
+                        <p>Вернём свежий вид</p>
+                    </div>
+                    <div class="price-table-body">
+                        <div class="price-row">
+                            <span class="price-service">Покраска обуви (гладкая кожа)</span>
+                            <span class="price-value">от 800 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Покраска замши/нубука</span>
+                            <span class="price-value">от 1000 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Восстановление цвета сумки</span>
+                            <span class="price-value">от 1200 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Удаление потёртостей</span>
+                            <span class="price-value">от 500 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table" data-aos="fade-up" data-aos-delay="100">
+                    <div class="price-table-header">
+                        <h3>Химчистка и уход</h3>
+                        <p>Глубокая чистка любых материалов</p>
+                    </div>
+                    <div class="price-table-body">
+                        <div class="price-row">
+                            <span class="price-service">Химчистка замши/нубука</span>
+                            <span class="price-value">от 600 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Чистка кожаной обуви</span>
+                            <span class="price-value">от 400 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Чистка текстиля/сетки</span>
+                            <span class="price-value">от 500 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Удаление пятен</span>
+                            <span class="price-value">от 350 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Водоотталкивающая пропитка</span>
+                            <span class="price-value">от 300 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table" data-aos="fade-up" data-aos-delay="200">
+                    <div class="price-table-header">
+                        <h3>Реставрация и сложный ремонт</h3>
+                        <p>Комплексное восстановление</p>
+                    </div>
+                    <div class="price-table-body">
+                        <div class="price-row">
+                            <span class="price-service">Полная реставрация обуви</span>
+                            <span class="price-value">от 2000 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Восстановление формы носка</span>
+                            <span class="price-value">от 800 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Ремонт подкладки</span>
+                            <span class="price-value">от 700 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Замена стельки</span>
+                            <span class="price-value">от 400 ₽</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-service">Ремонт каблука</span>
+                            <span class="price-value">от 600 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <div id="naboyki" class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-image" data-aos="fade-right">
+                    <img src="https://placehold.co/800x480/3E352F/8B5A3C?text=%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%BD%D0%B0%D0%B1%D0%BE%D0%B5%D0%BA" alt="Замена набоек">
+                </div>
+                <div class="service-detail-content" data-aos="fade-left">
+                    <h3>Замена набоек</h3>
+                    <p>
+                        Набойки — это часть подошвы, которая быстрее всего изнашивается. Своевременная замена набоек продлевает срок службы обуви и защищает подошву от повреждений.
+                    </p>
+                    <p>
+                        Мы используем качественные набойки различных типов: резиновые, полиуретановые, металлические. Подбираем материал в зависимости от типа обуви и ваших пожеланий.
+                    </p>
+                    <ul class="service-detail-list">
+                        <li><i class="fas fa-check-circle"></i> Высококачественные материалы Vibram, Topy, GTO</li>
+                        <li><i class="fas fa-check-circle"></i> Быстрая работа — от 20 минут</li>
+                        <li><i class="fas fa-check-circle"></i> Профессиональная установка без повреждения подошвы</li>
+                        <li><i class="fas fa-check-circle"></i> Гарантия на работу 2 месяца</li>
+                    </ul>
+                    <a href="contacts.html" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Записаться на ремонт
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rastyazhka" class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content" data-aos="fade-right">
+                    <h3>Растяжка обуви</h3>
+                    <p>
+                        Купили обувь, которая немного жмёт? Не спешите её выбрасывать! Мы профессионально растянем вашу обувь на специальном оборудовании.
+                    </p>
+                    <p>
+                        Используем современные колодки и щадящие технологии, которые позволяют растянуть обувь без риска повреждения материала. Работаем с кожей, замшей, текстилем.
+                    </p>
+                    <ul class="service-detail-list">
+                        <li><i class="fas fa-check-circle"></i> Растяжка в длину и ширину</li>
+                        <li><i class="fas fa-check-circle"></i> Коррекция проблемных зон (косточка, мизинец)</li>
+                        <li><i class="fas fa-check-circle"></i> Растяжка голенища сапог</li>
+                        <li><i class="fas fa-check-circle"></i> Бережное отношение к материалу</li>
+                    </ul>
+                    <a href="contacts.html" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Записаться на ремонт
+                    </a>
+                </div>
+                <div class="service-detail-image" data-aos="fade-left">
+                    <img src="https://placehold.co/800x480/3E352F/8B5A3C?text=%D0%A0%D0%B0%D1%81%D1%82%D1%8F%D0%B6%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%83%D0%B2%D0%B8" alt="Растяжка обуви">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="molnii" class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-image" data-aos="fade-right">
+                    <img src="https://placehold.co/800x480/3E352F/8B5A3C?text=%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BC%D0%BE%D0%BB%D0%BD%D0%B8%D0%B9" alt="Ремонт молний">
+                </div>
+                <div class="service-detail-content" data-aos="fade-left">
+                    <h3>Ремонт молний</h3>
+                    <p>
+                        Сломанная молния — частая проблема, особенно на сапогах и ботинках. Мы выполняем любые виды ремонта: от замены бегунка до полной замены молнии.
+                    </p>
+                    <p>
+                        Работаем с молниями YKK, Coats и другими качественными производителями. Подбираем молнию точно в цвет вашей обуви.
+                    </p>
+                    <ul class="service-detail-list">
+                        <li><i class="fas fa-check-circle"></i> Замена бегунка и язычка</li>
+                        <li><i class="fas fa-check-circle"></i> Ремонт зубчиков молнии</li>
+                        <li><i class="fas fa-check-circle"></i> Полная замена молнии на обуви и сумках</li>
+                        <li><i class="fas fa-check-circle"></i> Подбор фурнитуры в цвет</li>
+                    </ul>
+                    <a href="contacts.html" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Записаться на ремонт
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pokraska" class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content" data-aos="fade-right">
+                    <h3>Покраска обуви</h3>
+                    <p>
+                        Ваша любимая обувь потеряла цвет? Появились потёртости и царапины? Мы вернём ей первозданный вид с помощью профессиональной покраски.
+                    </p>
+                    <p>
+                        Используем качественные краски Saphir и Tarrago, которые глубоко проникают в кожу и держатся длительное время. Можем подобрать любой оттенок или полностью перекрасить обувь в новый цвет.
+                    </p>
+                    <ul class="service-detail-list">
+                        <li><i class="fas fa-check-circle"></i> Профессиональные краски из Франции и Испании</li>
+                        <li><i class="fas fa-check-circle"></i> Точный подбор оттенка</li>
+                        <li><i class="fas fa-check-circle"></i> Работа с кожей, замшей, нубуком</li>
+                        <li><i class="fas fa-check-circle"></i> Полировка и защита после покраски</li>
+                    </ul>
+                    <a href="contacts.html" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Записаться на ремонт
+                    </a>
+                </div>
+                <div class="service-detail-image" data-aos="fade-left">
+                    <img src="https://placehold.co/800x480/3E352F/8B5A3C?text=%D0%9F%D0%BE%D0%BA%D1%80%D0%B0%D1%81%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%83%D0%B2%D0%B8" alt="Покраска обуви">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chistka" class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-image" data-aos="fade-right">
+                    <img src="https://placehold.co/800x480/3E352F/8B5A3C?text=%D0%A5%D0%B8%D0%BC%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%83%D0%B2%D0%B8" alt="Химчистка обуви">
+                </div>
+                <div class="service-detail-content" data-aos="fade-left">
+                    <h3>Химчистка и уход</h3>
+                    <p>
+                        Глубокая профессиональная чистка обуви из любых материалов. Удаляем загрязнения, пятна, соль, обрабатываем защитными составами.
+                    </p>
+                    <p>
+                        Особенно рекомендуем химчистку для замшевой и нубуковой обуви — эти материалы требуют деликатного ухода и специальных средств.
+                    </p>
+                    <ul class="service-detail-list">
+                        <li><i class="fas fa-check-circle"></i> Чистка замши, нубука, текстиля</li>
+                        <li><i class="fas fa-check-circle"></i> Удаление солевых разводов и пятен</li>
+                        <li><i class="fas fa-check-circle"></i> Обработка водоотталкивающими пропитками</li>
+                        <li><i class="fas fa-check-circle"></i> Восстановление ворса замши</li>
+                    </ul>
+                    <a href="contacts.html" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Записаться на ремонт
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="restavratsiya" class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content" data-aos="fade-right">
+                    <h3>Полная реставрация</h3>
+                    <p>
+                        Комплексное восстановление дорогой и эксклюзивной обуви. Выполняем полный цикл работ: от замены подошвы до покраски и восстановления формы.
+                    </p>
+                    <p>
+                        Специализируемся на реставрации брендовой обуви (Gucci, Prada, Balenciaga, Ecco и др.). Используем только оригинальные материалы и технологии.
+                    </p>
+                    <ul class="service-detail-list">
+                        <li><i class="fas fa-check-circle"></i> Работа с премиум-брендами</li>
+                        <li><i class="fas fa-check-circle"></i> Восстановление сложных повреждений</li>
+                        <li><i class="fas fa-check-circle"></i> Замена подошвы с сохранением оригинального вида</li>
+                        <li><i class="fas fa-check-circle"></i> Гарантия на работу 3 месяца</li>
+                    </ul>
+                    <a href="contacts.html" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Записаться на ремонт
+                    </a>
+                </div>
+                <div class="service-detail-image" data-aos="fade-left">
+                    <img src="https://placehold.co/800x480/3E352F/8B5A3C?text=%D0%A0%D0%B5%D1%81%D1%82%D0%B0%D0%B2%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BE%D0%B1%D1%83%D0%B2%D0%B8" alt="Реставрация обуви">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Остались вопросы?</h2>
+                <p class="cta-text">
+                    Позвоните нам или приезжайте в мастерскую.<br>
+                    Мастер осмотрит обувь и озвучит точную стоимость.
+                </p>
+                <div class="cta-buttons">
+                    <a href="tel:+79272073428" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone"></i>
+                        +7 (927) 207-34-28
+                    </a>
+                    <a href="contacts.html" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Как нас найти
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-shoe-prints"></i>
+                        <div class="logo-text">
+                            <span class="logo-title">Ремонт обуви</span>
+                            <span class="logo-subtitle">на Гагарина</span>
+                        </div>
+                    </a>
+                    <p class="footer-description">
+                        Профессиональный ремонт обуви в Самаре с 2011 года. Опытные мастера, качественные материалы, гарантия на все виды работ.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://vk.com" target="_blank" aria-label="ВКонтакте">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/79272073428" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="works.html">Наши работы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#naboyki">Замена набоек</a></li>
+                        <li><a href="services.html#rastyazhka">Растяжка обуви</a></li>
+                        <li><a href="services.html#molnii">Ремонт молний</a></li>
+                        <li><a href="services.html#pokraska">Покраска обуви</a></li>
+                        <li><a href="services.html#chistka">Химчистка</a></li>
+                        <li><a href="services.html#restavratsiya">Реставрация</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>ул. Гагарина, 42/1<br>Самара, 443000</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+79272073428">+7 (927) 207-34-28</a>
+                        </li>
+                        <li>
+                            <i class="far fa-clock"></i>
+                            <span>Пн-Пт: 9:00 — 19:00<br>Сб: 10:00 — 16:00<br>Вс: выходной</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ремонт обуви на Гагарина. Все права защищены.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/79272073428" class="whatsapp-float" aria-label="Написать в WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Call Modal -->
+    <div class="modal" id="callModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <i class="fas fa-phone-volume"></i>
+                <h3>Заказать звонок</h3>
+            </div>
+            <div class="modal-body">
+                <p>Оставьте ваш номер телефона, и мы перезвоним вам в ближайшее время.</p>
+                <form class="call-form" id="callForm">
+                    <div class="form-group">
+                        <label for="callName">Ваше имя</label>
+                        <input type="text" id="callName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="callPhone">Телефон</label>
+                        <input type="tel" id="callPhone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-phone"></i>
+                        Заказать звонок
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</body>
+</html>

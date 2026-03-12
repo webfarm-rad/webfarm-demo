@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Express — Автосервис в Нижнем Новгороде | Ремонт авто всех марок</title>
+    <meta name="description" content="Garage Express — профессиональный автосервис в Нижнем Новгороде. ТО, диагностика, ремонт двигателя, ходовой, тормозной системы. Гарантия 6 месяцев. Звоните: +7 (930) 290-88-22">
+    <meta name="keywords" content="автосервис Нижний Новгород, ремонт авто, диагностика автомобиля, ТО, ремонт двигателя, ходовая часть, тормоза, Garage Express">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Garage Express — Автосервис в Нижнем Новгороде">
+    <meta property="og:description" content="Профессиональный ремонт авто всех марок. Гарантия 6 месяцев. Современное оборудование.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/photo-1486262715619-67b85e0b08d3.jpg">
+    <meta property="og:url" content="https://garageexpress-nn.ru/">
+
+    <link rel="canonical" href="https://garageexpress-nn.ru/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fa/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "Garage Express",
+      "description": "Профессиональный автосервис в Нижнем Новгороде. ТО, диагностика, ремонт двигателя и ходовой части.",
+      "url": "https://garageexpress-nn.ru",
+      "telephone": "+7-930-290-88-22",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ГСК Лада, 214",
+        "addressLocality": "Нижний Новгород",
+        "addressRegion": "Нижегородская область",
+        "addressCountry": "RU"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "priceRange": "$$",
+      "image": "img/photo-1486262715619-67b85e0b08d3.jpg"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">
+                    <i class="fas fa-wrench"></i>
+                    <span>GARAGE <strong>EXPRESS</strong></span>
+                </a>
+
+                <nav class="header__nav" id="headerNav">
+                    <a href="#services" class="header__link">Услуги</a>
+                    <a href="#about" class="header__link">О нас</a>
+                    <a href="#works" class="header__link">Наши работы</a>
+                    <a href="#price" class="header__link">Цены</a>
+                    <a href="#reviews" class="header__link">Отзывы</a>
+                    <a href="#contacts" class="header__link">Контакты</a>
+                </nav>
+
+                <div class="header__right">
+                    <a href="tel:+79302908822" class="header__phone">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (930) 290-88-22</span>
+                    </a>
+                    <button class="header__callback-btn" id="callbackBtn">
+                        Заказать звонок
+                    </button>
+                </div>
+
+                <button class="burger" id="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__content">
+            <button class="mobile-menu__close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="mobile-menu__nav">
+                <a href="#services" class="mobile-menu__link">Услуги</a>
+                <a href="#about" class="mobile-menu__link">О нас</a>
+                <a href="#works" class="mobile-menu__link">Наши работы</a>
+                <a href="#price" class="mobile-menu__link">Цены</a>
+                <a href="#reviews" class="mobile-menu__link">Отзывы</a>
+                <a href="#contacts" class="mobile-menu__link">Контакты</a>
+            </nav>
+            <a href="tel:+79302908822" class="mobile-menu__phone">
+                <i class="fas fa-phone"></i>
+                +7 (930) 290-88-22
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__slider" id="heroSlider">
+            <div class="hero__slide hero__slide--active">
+                <div class="hero__bg" style="background-image: url('img/photo-1486262715619-67b85e0b08d3.jpg')"></div>
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__slide">
+                <div class="hero__bg" style="background-image: url('img/photo-1625047509248-ec889cbff17f.jpg')"></div>
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__slide">
+                <div class="hero__bg" style="background-image: url('img/photo-1487754180451-c456f719a1fc.jpg')"></div>
+                <div class="hero__overlay"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="hero__content reveal">
+                <div class="hero__label">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Автосервис в Нижнем Новгороде
+                </div>
+                <h1 class="hero__title">
+                    Профессиональный ремонт<br>
+                    <span class="gradient-text">любой сложности</span>
+                </h1>
+                <p class="hero__text">
+                    Современное диагностическое оборудование, квалифицированные мастера<br>
+                    и гарантия качества на все виды работ
+                </p>
+                <div class="hero__actions">
+                    <a href="#callback" class="btn btn--primary btn-lift">
+                        <i class="fas fa-calendar-check"></i>
+                        Записаться на диагностику
+                    </a>
+                    <a href="#services" class="btn btn--outline">
+                        <i class="fas fa-list"></i>
+                        Наши услуги
+                    </a>
+                </div>
+
+                <div class="hero__features">
+                    <div class="hero__feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Гарантия 6 месяцев</span>
+                    </div>
+                    <div class="hero__feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Работаем 6 дней в неделю</span>
+                    </div>
+                    <div class="hero__feature">
+                        <i class="fas fa-tools"></i>
+                        <span>Оригинальные запчасти</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__controls">
+            <button class="hero__arrow hero__arrow--prev" id="heroArrowPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="hero__arrow hero__arrow--next" id="heroArrowNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="hero__dots" id="heroDots">
+            <button class="hero__dot hero__dot--active"></button>
+            <button class="hero__dot"></button>
+            <button class="hero__dot"></button>
+        </div>
+    </section>
+
+    <!-- Advantages Strip -->
+    <section class="advantages-strip">
+        <div class="container">
+            <div class="advantages-strip__grid">
+                <div class="advantage-card reveal-stagger">
+                    <div class="advantage-card__icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="advantage-card__content">
+                        <h3 class="advantage-card__title">Опытные мастера</h3>
+                        <p class="advantage-card__text">Средний стаж работы — 12 лет</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card reveal-stagger">
+                    <div class="advantage-card__icon">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <div class="advantage-card__content">
+                        <h3 class="advantage-card__title">Современная диагностика</h3>
+                        <p class="advantage-card__text">Компьютерная диагностика всех систем</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card reveal-stagger">
+                    <div class="advantage-card__icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="advantage-card__content">
+                        <h3 class="advantage-card__title">Честная цена</h3>
+                        <p class="advantage-card__text">Никаких скрытых доплат и наценок</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card reveal-stagger">
+                    <div class="advantage-card__icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="advantage-card__content">
+                        <h3 class="advantage-card__title">Гарантия качества</h3>
+                        <p class="advantage-card__text">6 месяцев на все виды работ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Наши возможности</span>
+                <h2 class="section-title">Полный спектр услуг<br>для вашего автомобиля</h2>
+                <p class="section-text">
+                    Мы работаем со всеми марками автомобилей — от бюджетных до премиум-класса.<br>
+                    Используем только качественные запчасти и материалы.
+                </p>
+            </div>
+
+            <div class="services-tabs">
+                <div class="services-tabs__nav">
+                    <button class="services-tab active" data-tab="to">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span>ТО и диагностика</span>
+                    </button>
+                    <button class="services-tab" data-tab="engine">
+                        <i class="fas fa-cog"></i>
+                        <span>Двигатель</span>
+                    </button>
+                    <button class="services-tab" data-tab="chassis">
+                        <i class="fas fa-car"></i>
+                        <span>Ходовая часть</span>
+                    </button>
+                    <button class="services-tab" data-tab="brake">
+                        <i class="fas fa-brake-warning"></i>
+                        <span>Тормозная система</span>
+                    </button>
+                    <button class="services-tab" data-tab="electric">
+                        <i class="fas fa-bolt"></i>
+                        <span>Электрика</span>
+                    </button>
+                    <button class="services-tab" data-tab="other">
+                        <i class="fas fa-wrench"></i>
+                        <span>Другие услуги</span>
+                    </button>
+                </div>
+
+                <div class="services-tabs__content">
+                    <!-- ТО и диагностика -->
+                    <div class="services-panel active" id="panel-to">
+                        <div class="services-grid">
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6.." alt="Техническое обслуживание">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Техническое обслуживание</h3>
+                                    <p class="service-card__desc">
+                                        Замена масла и фильтров, проверка всех систем автомобиля, регулировка узлов. ТО-1, ТО-2, ТО-3 по регламенту производителя.
+                                    </p>
+                                    <div class="service-card__price">от 3 500 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD.." alt="Компьютерная диагностика">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Компьютерная диагностика</h3>
+                                    <p class="service-card__desc">
+                                        Считывание ошибок, диагностика двигателя, коробки передач, ABS, подушек безопасности. Определение неисправностей.
+                                    </p>
+                                    <div class="service-card__price">от 1 000 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D1%85%D0%BE%D0%B4%D0%BE%D0%B2%D0%BE%D0%B9" alt="Диагностика ходовой">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Диагностика ходовой</h3>
+                                    <p class="service-card__desc">
+                                        Проверка подвески, рулевого управления, амортизаторов. Выявление люфтов, стуков и неисправностей на подъёмнике.
+                                    </p>
+                                    <div class="service-card__price">Бесплатно</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Двигатель -->
+                    <div class="services-panel" id="panel-engine">
+                        <div class="services-grid">
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F" alt="Ремонт двигателя">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Капитальный ремонт двигателя</h3>
+                                    <p class="service-card__desc">
+                                        Полная разборка, дефектовка, замена изношенных деталей, сборка и обкатка. Гарантия на работы 6 месяцев.
+                                    </p>
+                                    <div class="service-card__price">от 45 000 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D0%BB%D0%B0" alt="Замена масла">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Замена масла и фильтров</h3>
+                                    <p class="service-card__desc">
+                                        Замена моторного масла, масляного, воздушного и салонного фильтров. Масла Shell, Mobil, Castrol в наличии.
+                                    </p>
+                                    <div class="service-card__price">от 1 500 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%93%D0%A0%D0%9C" alt="Замена ГРМ">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Замена ремня/цепи ГРМ</h3>
+                                    <p class="service-card__desc">
+                                        Замена ремня или цепи ГРМ, роликов, помпы. Выставление меток, регулировка натяжения. Только качественные детали.
+                                    </p>
+                                    <div class="service-card__price">от 5 000 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ходовая часть -->
+                    <div class="services-panel" id="panel-chassis">
+                        <div class="services-grid">
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D1%81%D0%BA%D0%B8" alt="Ремонт подвески">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Ремонт подвески</h3>
+                                    <p class="service-card__desc">
+                                        Замена амортизаторов, стоек, пружин, сайлентблоков, шаровых опор, рычагов. Восстановление геометрии подвески.
+                                    </p>
+                                    <div class="service-card__price">от 2 000 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%A0%D0%B0%D0%B7%D0%B2%D0%B0%D0%BB-%D1%81%D1%85%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5" alt="Развал-схождение">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Развал-схождение 3D</h3>
+                                    <p class="service-card__desc">
+                                        Точная регулировка углов установки колёс на современном 3D-стенде. Увеличивает срок службы шин на 30-40%.
+                                    </p>
+                                    <div class="service-card__price">2 000 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%A8%D0%B8%D0%BD%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6" alt="Шиномонтаж">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Шиномонтаж и балансировка</h3>
+                                    <p class="service-card__desc">
+                                        Снятие/установка колёс, шиномонтаж, балансировка на современном оборудовании. Ремонт проколов и порезов.
+                                    </p>
+                                    <div class="service-card__price">от 800 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Тормозная система -->
+                    <div class="services-panel" id="panel-brake">
+                        <div class="services-grid">
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D1%82%D0%BE%D1%80%D0%BC%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%BA.." alt="Замена тормозных колодок">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Замена тормозных колодок</h3>
+                                    <p class="service-card__desc">
+                                        Замена передних и задних тормозных колодок, проточка дисков при необходимости. Проверка работы тормозной системы.
+                                    </p>
+                                    <div class="service-card__price">от 1 800 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D1%82%D0%BE%D1%80%D0%BC%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B4.." alt="Замена тормозных дисков">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Замена тормозных дисков</h3>
+                                    <p class="service-card__desc">
+                                        Установка новых тормозных дисков, проверка толщины и биения. Рекомендуем оригинальные или качественные аналоги.
+                                    </p>
+                                    <div class="service-card__price">от 2 500 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D1%82%D0%BE%D1%80%D0%BC%D0%BE%D0%B7%D0%BD%D0%BE%D0%B9%20%D1%81.." alt="Ремонт тормозной системы">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Ремонт тормозной системы</h3>
+                                    <p class="service-card__desc">
+                                        Замена тормозных шлангов, цилиндров, суппортов. Прокачка тормозов, замена тормозной жидкости.
+                                    </p>
+                                    <div class="service-card__price">от 3 000 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Электрика -->
+                    <div class="services-panel" id="panel-electric">
+                        <div class="services-grid">
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80.." alt="Диагностика электрики">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Диагностика электрики</h3>
+                                    <p class="service-card__desc">
+                                        Поиск неисправностей электропроводки, проверка генератора, стартера, АКБ. Компьютерная диагностика электронных блоков.
+                                    </p>
+                                    <div class="service-card__price">от 1 500 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0" alt="Ремонт генератора">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Ремонт генератора и стартера</h3>
+                                    <p class="service-card__desc">
+                                        Замена щёток, подшипников, реле-регулятора. Перемотка обмоток. Проверка на стенде после ремонта.
+                                    </p>
+                                    <div class="service-card__price">от 2 000 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7.." alt="Установка сигнализации">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Установка сигнализации</h3>
+                                    <p class="service-card__desc">
+                                        Установка автосигнализаций, иммобилайзеров, GPS-трекеров. Работаем с системами StarLine, Pandora, Scher-Khan.
+                                    </p>
+                                    <div class="service-card__price">от 5 000 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Другие услуги -->
+                    <div class="services-panel" id="panel-other">
+                        <div class="services-grid">
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D0%BB%D0%B0%20%D0%90%D0%9A%D0%9F%D0%9F" alt="Замена масла АКПП">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Замена масла АКПП/МКПП</h3>
+                                    <p class="service-card__desc">
+                                        Замена масла в автоматических и механических коробках передач. Частичная или полная замена с промывкой.
+                                    </p>
+                                    <div class="service-card__price">от 3 000 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="img/photo-1619642751360-8f891a67a726.jpg" alt="Замена охлаждающей жидкости">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Замена охлаждающей жидкости</h3>
+                                    <p class="service-card__desc">
+                                        Слив старого антифриза, промывка системы охлаждения, заливка нового тосола/антифриза. Проверка на герметичность.
+                                    </p>
+                                    <div class="service-card__price">от 1 200 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="service-card reveal-scale">
+                                <div class="service-card__img">
+                                    <img src="https://placehold.co/600x400/2a1a1a/D32F2F?text=%D0%9A%D1%83%D0%B7%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82" alt="Кузовной ремонт">
+                                </div>
+                                <div class="service-card__content">
+                                    <h3 class="service-card__title">Кузовной ремонт</h3>
+                                    <p class="service-card__desc">
+                                        Рихтовка, сварка, шпатлёвка, грунтовка и покраска кузовных элементов. Устранение вмятин и сколов.
+                                    </p>
+                                    <div class="service-card__price">от 5 000 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Работаем со всеми марками</span>
+                <h2 class="section-title">Обслуживаем автомобили любых брендов</h2>
+            </div>
+
+            <div class="brands-marquee">
+                <div class="brands-marquee__track">
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/toyota.com" alt="Toyota">
+                        <span>Toyota</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/bmw.com" alt="BMW">
+                        <span>BMW</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/vw.com" alt="Volkswagen">
+                        <span>Volkswagen</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/hyundai.com" alt="Hyundai">
+                        <span>Hyundai</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/kia.com" alt="Kia">
+                        <span>Kia</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/lada.ru" alt="Lada">
+                        <span>Lada</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/renault.com" alt="Renault">
+                        <span>Renault</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/nissan.com" alt="Nissan">
+                        <span>Nissan</span>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/toyota.com" alt="Toyota">
+                        <span>Toyota</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/bmw.com" alt="BMW">
+                        <span>BMW</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/vw.com" alt="Volkswagen">
+                        <span>Volkswagen</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/hyundai.com" alt="Hyundai">
+                        <span>Hyundai</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/kia.com" alt="Kia">
+                        <span>Kia</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/lada.ru" alt="Lada">
+                        <span>Lada</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/renault.com" alt="Renault">
+                        <span>Renault</span>
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://logo.clearbit.com/nissan.com" alt="Nissan">
+                        <span>Nissan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__images reveal-left">
+                    <div class="about__img about__img--main">
+                        <img src="https://placehold.co/600x700/2a1a1a/D32F2F?text=Garage%20Express" alt="Garage Express">
+                    </div>
+                    <div class="about__img about__img--accent">
+                        <img src="https://placehold.co/400x300/2a1a1a/D32F2F?text=%D0%9D%D0%B0%D1%88%D0%B0%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0" alt="Наша команда">
+                    </div>
+                    <div class="about__badge">
+                        <div class="about__badge-number">8+</div>
+                        <div class="about__badge-text">лет<br>опыта</div>
+                    </div>
+                </div>
+
+                <div class="about__content reveal-right">
+                    <span class="section-label">О нашем сервисе</span>
+                    <h2 class="section-title">Garage Express — ваш надёжный партнёр на дороге</h2>
+                    <p class="about__text">
+                        Мы открылись в 2016 году как небольшой гаражный сервис для друзей и знакомых. Сегодня Garage Express — это современный автотехцентр с профессиональным оборудованием и командой опытных мастеров.
+                    </p>
+                    <p class="about__text">
+                        За годы работы мы обслужили более 2500 автомобилей. Наши клиенты возвращаются к нам снова и рекомендуют друзьям — потому что мы честно говорим о проблемах, не навязываем лишних услуг и делаем качественно.
+                    </p>
+
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Современное диагностическое оборудование</span>
+                        </div>
+                        <div class="about__feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Сертифицированные мастера с опытом 10+ лет</span>
+                        </div>
+                        <div class="about__feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Работаем только с проверенными поставщиками</span>
+                        </div>
+                        <div class="about__feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Прозрачное ценообразование без скрытых платежей</span>
+                        </div>
+                    </div>
+
+                    <a href="#contacts" class="btn btn--primary btn-lift">
+                        <i class="fas fa-phone"></i>
+                        Связаться с нами
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Как мы работаем</span>
+                <h2 class="section-title">4 простых шага до вашего идеального авто</h2>
+            </div>
+
+            <div class="process__steps">
+                <div class="process-step reveal-scale">
+                    <div class="process-step__number">01</div>
+                    <div class="process-step__icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="process-step__title">Заявка</h3>
+                    <p class="process-step__text">
+                        Позвоните нам или оставьте заявку на сайте. Опишите проблему, и мы запишем вас на удобное время.
+                    </p>
+                </div>
+
+                <div class="process-step reveal-scale">
+                    <div class="process-step__number">02</div>
+                    <div class="process-step__icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="process-step__title">Диагностика</h3>
+                    <p class="process-step__text">
+                        Проводим полную диагностику автомобиля, выявляем все неисправности и составляем смету работ.
+                    </p>
+                </div>
+
+                <div class="process-step reveal-scale">
+                    <div class="process-step__number">03</div>
+                    <div class="process-step__icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="process-step__title">Ремонт</h3>
+                    <p class="process-step__text">
+                        После согласования приступаем к работе. Держим вас в курсе на каждом этапе ремонта.
+                    </p>
+                </div>
+
+                <div class="process-step reveal-scale">
+                    <div class="process-step__number">04</div>
+                    <div class="process-step__icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3 class="process-step__title">Выдача</h3>
+                    <p class="process-step__text">
+                        Проверяем качество работ, выдаём автомобиль и документы с гарантией на 6 месяцев.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats__bg" style="background-image: url('https://placehold.co/1920x1152/2a1a1a/D32F2F?text=%2B')"></div>
+        <div class="stats__overlay"></div>
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat-card reveal">
+                    <div class="stat-card__number" data-target="8" data-suffix="+">0</div>
+                    <div class="stat-card__label">лет на рынке</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-card__number" data-target="2500" data-suffix="+">0</div>
+                    <div class="stat-card__label">обслуженных автомобилей</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-card__number" data-target="94" data-suffix="%">0</div>
+                    <div class="stat-card__label">клиентов возвращаются</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-card__number" data-target="6">0</div>
+                    <div class="stat-card__label">месяцев гарантии</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section class="works" id="works">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Портфолио</span>
+                <h2 class="section-title">Наши работы</h2>
+                <p class="section-text">
+                    Примеры выполненных ремонтов — от мелкого ТО до капитального восстановления.
+                </p>
+            </div>
+
+            <div class="works__grid">
+                <div class="work-card reveal-scale">
+                    <div class="work-card__img img-hover-overlay">
+                        <img src="https://placehold.co/800x600/2a1a1a/D32F2F?text=%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D1%82%D0%BE%D1%80%D0%BC%D0%BE%D0%B7%D0%BE%D0%B2" alt="Замена тормозов">
+                        <div class="img-hover-overlay__content">
+                            <h4>Замена тормозной системы</h4>
+                            <p>Toyota Camry 2018</p>
+                        </div>
+                    </div>
+                    <div class="work-card__info">
+                        <h3 class="work-card__title">Замена тормозов</h3>
+                        <p class="work-card__desc">Полная замена тормозных дисков и колодок</p>
+                    </div>
+                </div>
+
+                <div class="work-card reveal-scale">
+                    <div class="work-card__img img-hover-overlay">
+                        <img src="https://placehold.co/800x600/2a1a1a/D32F2F?text=%D0%9A%D0%B0%D0%BF%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F" alt="Капремонт двигателя">
+                        <div class="img-hover-overlay__content">
+                            <h4>Капитальный ремонт</h4>
+                            <p>BMW 320i 2015</p>
+                        </div>
+                    </div>
+                    <div class="work-card__info">
+                        <h3 class="work-card__title">Капремонт двигателя</h3>
+                        <p class="work-card__desc">Разборка, дефектовка, сборка с заменой поршневой</p>
+                    </div>
+                </div>
+
+                <div class="work-card reveal-scale">
+                    <div class="work-card__img img-hover-overlay">
+                        <img src="https://placehold.co/800x600/2a1a1a/D32F2F?text=%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D1%81%D0%BA%D0%B8" alt="Замена подвески">
+                        <div class="img-hover-overlay__content">
+                            <h4>Восстановление подвески</h4>
+                            <p>VW Polo 2016</p>
+                        </div>
+                    </div>
+                    <div class="work-card__info">
+                        <h3 class="work-card__title">Ремонт подвески</h3>
+                        <p class="work-card__desc">Замена амортизаторов, рычагов, сайлентблоков</p>
+                    </div>
+                </div>
+
+                <div class="work-card reveal-scale">
+                    <div class="work-card__img img-hover-overlay">
+                        <img src="https://placehold.co/800x600/2a1a1a/D32F2F?text=%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%93%D0%A0%D0%9C" alt="Замена ГРМ">
+                        <div class="img-hover-overlay__content">
+                            <h4>Замена ремня ГРМ</h4>
+                            <p>Renault Duster 2019</p>
+                        </div>
+                    </div>
+                    <div class="work-card__info">
+                        <h3 class="work-card__title">Замена ГРМ</h3>
+                        <p class="work-card__desc">Ремень ГРМ, ролики, помпа — полный комплект</p>
+                    </div>
+                </div>
+
+                <div class="work-card reveal-scale">
+                    <div class="work-card__img img-hover-overlay">
+                        <img src="https://placehold.co/800x600/2a1a1a/D32F2F?text=%D0%A2%D0%9E" alt="ТО">
+                        <div class="img-hover-overlay__content">
+                            <h4>Плановое ТО</h4>
+                            <p>Hyundai Solaris 2020</p>
+                        </div>
+                    </div>
+                    <div class="work-card__info">
+                        <h3 class="work-card__title">ТО-2</h3>
+                        <p class="work-card__desc">Замена масла, фильтров, проверка всех систем</p>
+                    </div>
+                </div>
+
+                <div class="work-card reveal-scale">
+                    <div class="work-card__img img-hover-overlay">
+                        <img src="https://placehold.co/800x600/2a1a1a/D32F2F?text=%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0" alt="Диагностика">
+                        <div class="img-hover-overlay__content">
+                            <h4>Компьютерная диагностика</h4>
+                            <p>Kia Rio 2017</p>
+                        </div>
+                    </div>
+                    <div class="work-card__info">
+                        <h3 class="work-card__title">Диагностика</h3>
+                        <p class="work-card__desc">Поиск и устранение ошибок электроники</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Section -->
+    <section class="price-section" id="price">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Стоимость услуг</span>
+                <h2 class="section-title">Прозрачное ценообразование</h2>
+                <p class="section-text">
+                    Все цены указаны без учёта стоимости запчастей.<br>
+                    Точную смету составим после диагностики вашего автомобиля.
+                </p>
+            </div>
+
+            <div class="price-table">
+                <div class="price-table__category reveal">
+                    <h3 class="price-table__title">
+                        <i class="fas fa-clipboard-check"></i>
+                        ТО и диагностика
+                    </h3>
+                    <div class="price-table__items">
+                        <div class="price-item">
+                            <span class="price-item__name">Компьютерная диагностика</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 1 000 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">ТО-1 (до 15 000 км)</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 3 500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">ТО-2 (до 30 000 км)</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 5 500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Диагностика ходовой части</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">Бесплатно</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table__category reveal">
+                    <h3 class="price-table__title">
+                        <i class="fas fa-cog"></i>
+                        Двигатель
+                    </h3>
+                    <div class="price-table__items">
+                        <div class="price-item">
+                            <span class="price-item__name">Замена масла и фильтров</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 1 500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Замена ремня ГРМ</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 5 000 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Замена свечей зажигания</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 800 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Капитальный ремонт двигателя</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 45 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table__category reveal">
+                    <h3 class="price-table__title">
+                        <i class="fas fa-car"></i>
+                        Ходовая часть
+                    </h3>
+                    <div class="price-table__items">
+                        <div class="price-item">
+                            <span class="price-item__name">Замена амортизаторов (пара)</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 3 000 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Замена шаровой опоры</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 1 500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Развал-схождение 3D</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">2 000 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Шиномонтаж (R13-R16)</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 800 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table__category reveal">
+                    <h3 class="price-table__title">
+                        <i class="fas fa-brake-warning"></i>
+                        Тормозная система
+                    </h3>
+                    <div class="price-table__items">
+                        <div class="price-item">
+                            <span class="price-item__name">Замена тормозных колодок</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 1 800 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Замена тормозных дисков</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 2 500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Замена тормозной жидкости</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 1 200 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Ремонт тормозного суппорта</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 3 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table__category reveal">
+                    <h3 class="price-table__title">
+                        <i class="fas fa-bolt"></i>
+                        Электрика
+                    </h3>
+                    <div class="price-table__items">
+                        <div class="price-item">
+                            <span class="price-item__name">Диагностика электрики</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 1 500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Ремонт генератора</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 2 000 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Ремонт стартера</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 2 500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Установка сигнализации</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 5 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-table__category reveal">
+                    <h3 class="price-table__title">
+                        <i class="fas fa-wrench"></i>
+                        Другие услуги
+                    </h3>
+                    <div class="price-table__items">
+                        <div class="price-item">
+                            <span class="price-item__name">Замена масла АКПП/МКПП</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 3 000 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Замена антифриза</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 1 200 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Кузовной ремонт (локальный)</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 5 000 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-item__name">Полировка кузова</span>
+                            <span class="price-item__dots"></span>
+                            <span class="price-item__price">от 8 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-note reveal">
+                <i class="fas fa-info-circle"></i>
+                <p>
+                    <strong>Обратите внимание:</strong> Цены указаны за работу без учёта стоимости запчастей.
+                    Стоимость запчастей рассчитывается индивидуально после диагностики.
+                    Мы работаем как с оригинальными деталями, так и с качественными аналогами.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Отзывы клиентов</span>
+                <h2 class="section-title">Что говорят о нас</h2>
+            </div>
+
+            <div class="reviews__carousel">
+                <div class="reviews__track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-card__header">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Алексей" class="review-card__avatar">
+                            <div class="review-card__author">
+                                <h4 class="review-card__name">Алексей Морозов</h4>
+                                <div class="review-card__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-card__text">
+                            Обращался для капремонта двигателя на своей Тойоте. Ребята сделали всё качественно, объяснили каждый этап работы. Цена вышла даже ниже, чем в других сервисах. Рекомендую!
+                        </p>
+                        <div class="review-card__date">Февраль 2026</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-card__header">
+                            <img src="https://i.pravatar.cc/100?img=47" alt="Мария" class="review-card__avatar">
+                            <div class="review-card__author">
+                                <h4 class="review-card__name">Мария Петрова</h4>
+                                <div class="review-card__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-card__text">
+                            Делала ТО и замену тормозов. Очень понравилось отношение — не пытались навязать лишнего, всё чётко по делу. Цены адекватные, работа качественная. Буду обращаться ещё.
+                        </p>
+                        <div class="review-card__date">Январь 2026</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-card__header">
+                            <img src="https://i.pravatar.cc/100?img=33" alt="Дмитрий" class="review-card__avatar">
+                            <div class="review-card__author">
+                                <h4 class="review-card__name">Дмитрий Соколов</h4>
+                                <div class="review-card__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-card__text">
+                            Сделали диагностику ходовки и замену амортизаторов на моём Фольксвагене. Работу выполнили быстро, машина теперь как новая. Гарантию дали на полгода. Спасибо!
+                        </p>
+                        <div class="review-card__date">Декабрь 2025</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-card__header">
+                            <img src="https://i.pravatar.cc/100?img=27" alt="Сергей" class="review-card__avatar">
+                            <div class="review-card__author">
+                                <h4 class="review-card__name">Сергей Волков</h4>
+                                <div class="review-card__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-card__text">
+                            Приехал с проблемой — машина глохла на ходу. Быстро нашли неисправность (датчик), заменили. Взяли адекватную цену. Мастера — профессионалы своего дела.
+                        </p>
+                        <div class="review-card__date">Ноябрь 2025</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-card__header">
+                            <img src="https://i.pravatar.cc/100?img=65" alt="Елена" class="review-card__avatar">
+                            <div class="review-card__author">
+                                <h4 class="review-card__name">Елена Смирнова</h4>
+                                <div class="review-card__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-card__text">
+                            Делала замену масла и фильтров. Всё сделали за 40 минут, пока я ждала. Мастер объяснил, что ещё стоит проверить в ближайшее время. Очень довольна!
+                        </p>
+                        <div class="review-card__date">Октябрь 2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews__controls">
+                <button class="reviews__arrow reviews__arrow--prev" id="reviewsPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="reviews__arrow reviews__arrow--next" id="reviewsNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Частые вопросы</span>
+                <h2 class="section-title">Ответы на популярные вопросы</h2>
+            </div>
+
+            <div class="faq__list">
+                <div class="faq__item reveal">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Сколько времени занимает ремонт?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>
+                            Время ремонта зависит от сложности работ. Замена масла — 30-40 минут, замена тормозных колодок — 1-2 часа,
+                            замена ГРМ — 3-5 часов, капитальный ремонт двигателя — 5-10 дней. После диагностики мы назовём точные сроки.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__item reveal">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Какая гарантия на ремонт?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>
+                            Мы даём гарантию 6 месяцев на все виды работ. На запчасти действует гарантия производителя —
+                            от 6 месяцев до 2 лет в зависимости от детали. Все условия прописываем в договоре.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__item reveal">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Нужно ли записываться заранее?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>
+                            Да, рекомендуем записаться по телефону или через форму на сайте. Так мы сможем подготовить необходимые запчасти
+                            и выделить время для вашего автомобиля. В некоторых случаях принимаем и без записи, но тогда может быть очередь.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__item reveal">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Можно ли привезти свои запчасти?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>
+                            Да, мы можем установить ваши запчасти, но в этом случае гарантия распространяется только на работу,
+                            а не на детали. Мы рекомендуем покупать запчасти у нас — работаем с проверенными поставщиками,
+                            и на всё даём полную гарантию.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__item reveal">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Какие марки автомобилей вы обслуживаете?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>
+                            Мы работаем со всеми марками автомобилей: Toyota, BMW, VW, Hyundai, Kia, Lada, Renault, Nissan, Ford, Mazda,
+                            Chevrolet и другие. Есть опыт работы как с бюджетными, так и с премиум-марками.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__item reveal">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Как происходит оплата?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>
+                            Вы оплачиваете только после выполнения всех работ и проверки автомобиля.
+                            Принимаем наличные и банковские карты. При дорогостоящем ремонте (от 30 000 ₽)
+                            возможна частичная предоплата за запчасти.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Callback CTA Section -->
+    <section class="cta-section" id="callback">
+        <div class="container">
+            <div class="cta-box reveal">
+                <div class="cta-box__content">
+                    <h2 class="cta-box__title">Не уверены, что с вашим авто?</h2>
+                    <p class="cta-box__text">
+                        Приезжайте к нам на бесплатную диагностику.<br>
+                        Определим проблему и назовём точную стоимость ремонта.
+                    </p>
+                </div>
+                <div class="cta-box__form">
+                    <form class="callback-form" id="callbackForm">
+                        <div class="callback-form__group">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="callback-form__group">
+                            <input type="tel" name="phone" placeholder="Телефон" required>
+                        </div>
+                        <div class="callback-form__group">
+                            <select name="service" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="diagnostics">Диагностика</option>
+                                <option value="to">Техническое обслуживание</option>
+                                <option value="engine">Ремонт двигателя</option>
+                                <option value="chassis">Ремонт ходовой</option>
+                                <option value="brakes">Тормозная система</option>
+                                <option value="electric">Электрика</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn-lift">
+                            <i class="fas fa-paper-plane"></i>
+                            Записаться
+                        </button>
+                        <p class="callback-form__note">
+                            Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Как нас найти</span>
+                <h2 class="section-title">Контакты</h2>
+            </div>
+
+            <div class="contacts__grid">
+                <div class="contacts__info reveal-left">
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-item__content">
+                            <h3 class="contact-item__title">Адрес</h3>
+                            <p class="contact-item__text">Нижний Новгород, ГСК Лада, 214</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-item__content">
+                            <h3 class="contact-item__title">Телефон</h3>
+                            <p class="contact-item__text">
+                                <a href="tel:+79302908822">+7 (930) 290-88-22</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-item__content">
+                            <h3 class="contact-item__title">Режим работы</h3>
+                            <p class="contact-item__text">
+                                Пн-Сб: 09:00 – 20:00<br>
+                                Вс: выходной
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-item__content">
+                            <h3 class="contact-item__title">Email</h3>
+                            <p class="contact-item__text">
+                                <a href="mailto:info@garageexpress-nn.ru">info@garageexpress-nn.ru</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__socials">
+                        <a href="https://wa.me/79302908822" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/garageexpress" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://vk.com/garageexpress" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contacts__map reveal-right">
+                    <iframe
+                        src="https://yandex.com/map-widget/v1/?ll=44.002936,56.326797&z=16&l=map&pt=44.002936,56.326797,pm2rdm"
+                        width="100%"
+                        height="450"
+                        frameborder="0"
+                        allowfullscreen
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="footer__logo">
+                        <i class="fas fa-wrench"></i>
+                        <span>GARAGE <strong>EXPRESS</strong></span>
+                    </div>
+                    <p class="footer__desc">
+                        Профессиональный автосервис в Нижнем Новгороде.
+                        Качественный ремонт по честной цене.
+                    </p>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__links">
+                        <li><a href="#services">ТО и диагностика</a></li>
+                        <li><a href="#services">Ремонт двигателя</a></li>
+                        <li><a href="#services">Ремонт ходовой</a></li>
+                        <li><a href="#services">Тормозная система</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Информация</h4>
+                    <ul class="footer__links">
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#works">Наши работы</a></li>
+                        <li><a href="#price">Цены</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__contacts">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+79302908822">+7 (930) 290-88-22</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@garageexpress-nn.ru">info@garageexpress-nn.ru</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>ГСК Лада, 214, Нижний Новгород</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">© 2026 Garage Express. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Публичная оферта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/79302908822" class="whatsapp-float pulse-glow" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

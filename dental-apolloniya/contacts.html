@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакты стоматологии Апполония в Краснодаре: адрес, телефон, режим работы. Записаться на приём онлайн.">
+    <title>Контакты | Стоматология Апполония в Краснодаре</title>
+
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fa/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contact-map {
+            width: 100%;
+            height: 500px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .contact-info-card {
+            background: var(--bg-white);
+            padding: 40px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .contact-info-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info-icon i {
+            font-size: 2.5rem;
+            color: var(--bg-white);
+        }
+
+        .contact-info-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        .contact-info-card p {
+            font-size: 1.125rem;
+            color: var(--text-gray);
+            margin: 0;
+        }
+
+        .contact-info-card a {
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .contact-info-card a:hover {
+            color: var(--primary-dark);
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .contact-method {
+            background: var(--bg-light);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .contact-method:hover {
+            background: var(--primary-color);
+            color: var(--bg-white);
+            transform: translateY(-4px);
+        }
+
+        .contact-method i {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .contact-method:hover i {
+            color: var(--bg-white);
+        }
+
+        .contact-method h4 {
+            font-size: 1rem;
+            margin: 0;
+            transition: var(--transition);
+        }
+
+        .contact-method:hover h4 {
+            color: var(--bg-white);
+        }
+
+        @media (max-width: 1024px) {
+            .contact-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-methods {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-map {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tooth"></i>
+                    <span>Апполония</span>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="about.html" class="nav-link">О клинике</a>
+                    <a href="services.html" class="nav-link">Услуги</a>
+                    <a href="works.html" class="nav-link">Наши работы</a>
+                    <a href="contacts.html" class="nav-link active">Контакты</a>
+                </nav>
+
+                <div class="header-right">
+                    <div class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+79184664484">+7 (918) 466-44-84</a>
+                    </div>
+                    <button class="btn btn-primary" id="appointmentBtn">Записаться</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <img src="img/photo-1629909613654-28e377c37b09.jpg" alt="Контакты">
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Как нас <span class="highlight">найти</span></h1>
+                <p class="hero-subtitle">
+                    Мы находимся в центре Краснодара. Приходите на бесплатную консультацию!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="about" style="padding-top: 100px;">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Адрес</h3>
+                    <p>
+                        Краснодар,<br>
+                        Ставропольская ул., 26
+                    </p>
+                    <p style="margin-top: 16px; font-size: 0.9375rem;">
+                        <a href="https://yandex.com/maps/org/apolloniya/90320575929/" target="_blank">
+                            Открыть на Яндекс.Картах →
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Телефон</h3>
+                    <p>
+                        <a href="tel:+79184664484">+7 (918) 466-44-84</a>
+                    </p>
+                    <p style="margin-top: 16px; font-size: 0.9375rem; color: var(--text-gray);">
+                        Звоните с 9:00 до 20:00<br>
+                        без выходных
+                    </p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Режим работы</h3>
+                    <p>
+                        Понедельник — Воскресенье<br>
+                        с 9:00 до 20:00
+                    </p>
+                    <p style="margin-top: 16px; font-size: 0.9375rem; color: var(--text-gray);">
+                        Работаем без выходных<br>
+                        и праздничных дней
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="section-header" style="margin-top: 80px;">
+                <span class="section-label">Способы связи</span>
+                <h2 class="section-title">Выберите удобный способ</h2>
+            </div>
+
+            <div class="contact-methods">
+                <a href="tel:+79184664484" class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <h4>Позвонить</h4>
+                </a>
+
+                <a href="https://wa.me/79184664484" target="_blank" class="contact-method">
+                    <i class="fab fa-whatsapp"></i>
+                    <h4>WhatsApp</h4>
+                </a>
+
+                <a href="https://t.me/+79184664484" target="_blank" class="contact-method">
+                    <i class="fab fa-telegram"></i>
+                    <h4>Telegram</h4>
+                </a>
+
+                <a href="https://vk.com" target="_blank" class="contact-method">
+                    <i class="fab fa-vk"></i>
+                    <h4>ВКонтакте</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="about" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Местоположение</span>
+                <h2 class="section-title">Мы на карте</h2>
+                <p class="section-subtitle">Находимся в самом центре Краснодара, удобная транспортная доступность</p>
+            </div>
+
+            <div class="contact-map">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e8c5e4f3b2a1d9c8e7f6a5b4c3d2e1f&amp;source=constructor"
+                    width="100%"
+                    height="500"
+                    frameborder="0"
+                    style="border: 0;">
+                </iframe>
+            </div>
+
+            <div style="margin-top: 40px; background: var(--bg-white); padding: 40px; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                <h3 style="margin-bottom: 24px; font-size: 1.75rem;">Как добраться</h3>
+
+                <div style="display: grid; gap: 24px;">
+                    <div style="display: flex; gap: 20px;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--bg-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-car" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.125rem; margin-bottom: 8px;">На автомобиле</h4>
+                            <p style="color: var(--text-gray); margin: 0;">
+                                Удобная парковка перед клиникой. От центра города — 5 минут.
+                                Въезд с улицы Ставропольская.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 20px;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--bg-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-bus" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.125rem; margin-bottom: 8px;">Общественным транспортом</h4>
+                            <p style="color: var(--text-gray); margin: 0;">
+                                Автобусы: №3, №7, №15, №22 — остановка "Ставропольская".<br>
+                                Троллейбусы: №1, №5 — остановка "Площадь Театральная".
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 20px;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--bg-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-walking" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.125rem; margin-bottom: 8px;">Пешком</h4>
+                            <p style="color: var(--text-gray); margin: 0;">
+                                От площади Театральной — 3 минуты пешком.<br>
+                                От ТЦ "Красная площадь" — 7 минут.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="cta-title">Запишитесь на приём</h2>
+                    <p class="cta-subtitle">
+                        Оставьте заявку, и наш администратор свяжется с вами в течение 15 минут,
+                        чтобы подобрать удобное время визита.
+                    </p>
+                    <ul class="cta-features">
+                        <li><i class="fas fa-check-circle"></i> Бесплатная консультация и осмотр</li>
+                        <li><i class="fas fa-check-circle"></i> Подберём удобное время визита</li>
+                        <li><i class="fas fa-check-circle"></i> Ответим на все ваши вопросы</li>
+                        <li><i class="fas fa-check-circle"></i> Составим план лечения и смету</li>
+                    </ul>
+
+                    <div style="margin-top: 40px; padding: 30px; background: rgba(74, 144, 226, 0.1); border-radius: var(--radius-md);">
+                        <h4 style="margin-bottom: 16px; color: var(--primary-color);">
+                            <i class="fas fa-gift"></i> Специальное предложение
+                        </h4>
+                        <p style="margin: 0; color: var(--text-dark); font-weight: 600;">
+                            При записи через сайт — профгигиена со скидкой 20%!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cta-form">
+                    <h3>Форма записи</h3>
+                    <form id="ctaForm">
+                        <div class="form-group">
+                            <label>Ваше имя *</label>
+                            <input type="text" name="name" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон *</label>
+                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Услуга</label>
+                            <select name="service">
+                                <option value="">Выберите услугу</option>
+                                <option value="consultation">Консультация</option>
+                                <option value="therapy">Лечение кариеса</option>
+                                <option value="implants">Имплантация</option>
+                                <option value="veneers">Виниры</option>
+                                <option value="whitening">Отбеливание</option>
+                                <option value="hygiene">Профгигиена</option>
+                                <option value="braces">Брекеты</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Комментарий</label>
+                            <textarea name="comment" rows="3" placeholder="Опишите вашу ситуацию или задайте вопрос"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить заявку
+                        </button>
+                        <p class="form-privacy">
+                            * Обязательные поля для заполнения<br>
+                            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Частые вопросы</span>
+                <h2 class="section-title">О записи и посещении</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Как записаться на приём?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Записаться можно тремя способами: позвонить по телефону +7 (918) 466-44-84,
+                            написать в WhatsApp или Telegram, либо заполнить форму на сайте. Администратор
+                            свяжется с вами в течение 15 минут.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Есть ли парковка?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Да, перед клиникой есть удобная парковка для пациентов. Также рядом находится
+                            платная городская парковка.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Нужно ли что-то брать с собой?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Если у вас есть предыдущие снимки зубов, медицинская карта или результаты анализов —
+                            возьмите с собой. Паспорт необходим для оформления документов. Всё остальное у нас есть.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Можно ли прийти без записи?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Да, но лучше предварительно записаться, чтобы не ждать в очереди. Без записи принимаем
+                            при наличии свободного времени у врача.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-tooth"></i>
+                        <span>Апполония</span>
+                    </div>
+                    <p class="footer-description">
+                        Современная стоматологическая клиника в Краснодаре.
+                        Профессиональное лечение зубов с заботой о вашем комфорте.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О клинике</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="works.html">Наши работы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#therapy">Лечение кариеса</a></li>
+                        <li><a href="services.html#implants">Имплантация зубов</a></li>
+                        <li><a href="services.html#veneers">Виниры</a></li>
+                        <li><a href="services.html#whitening">Отбеливание</a></li>
+                        <li><a href="services.html#hygiene">Профгигиена</a></li>
+                        <li><a href="services.html#braces">Брекеты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Краснодар,<br>Ставропольская ул., 26</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+79184664484">+7 (918) 466-44-84</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Вс: 9:00 — 20:00</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/79184664484">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Стоматология "Апполония". Все права защищены.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Appointment Modal -->
+    <div class="modal" id="appointmentModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3 class="modal-title">Записаться на приём</h3>
+            <p class="modal-subtitle">Оставьте ваши контакты, мы перезвоним в течение 15 минут</p>
+
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label>Ваше имя</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Телефон</label>
+                    <input type="tel" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Услуга</label>
+                    <select name="service">
+                        <option value="">Выберите услугу</option>
+                        <option value="consultation">Консультация</option>
+                        <option value="therapy">Лечение кариеса</option>
+                        <option value="implants">Имплантация</option>
+                        <option value="veneers">Виниры</option>
+                        <option value="whitening">Отбеливание</option>
+                        <option value="hygiene">Профгигиена</option>
+                        <option value="braces">Брекеты</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Комментарий</label>
+                    <textarea name="comment" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    Отправить заявку
+                </button>
+                <p class="form-privacy">
+                    Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/79184664484" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Call Button -->
+    <button class="call-btn" id="callBtn">
+        <i class="fas fa-phone"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

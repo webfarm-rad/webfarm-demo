@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://k-profi.ru/sitemap.xml
+
+# Disallow paths
+Disallow: /css/
+Disallow: /js/
+Disallow: /img/

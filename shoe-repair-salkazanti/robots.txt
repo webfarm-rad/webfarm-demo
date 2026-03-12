@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shoe-repair-salkazanti.surge.sh/sitemap.xml

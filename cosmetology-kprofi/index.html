@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="K-profi — профессиональная косметология и лазерная эпиляция в Ростове-на-Дону. Безопасные процедуры, современное оборудование, опытные специалисты.">
+    <meta name="keywords" content="лазерная эпиляция, косметология, уход за кожей, Ростов-на-Дону, эпиляция диодным лазером">
+    <title>K-profi — Косметология и лазерная эпиляция в Ростове-на-Дону</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fa/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "K-profi",
+        "description": "Косметология и лазерная эпиляция в Ростове-на-Дону",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "пер. Семашко, 113",
+            "addressLocality": "Ростов-на-Дону",
+            "addressCountry": "RU"
+        },
+        "telephone": "+7 (928) 141-11-20",
+        "priceRange": "₽₽",
+        "url": "https://k-profi.ru"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">K-profi</span>
+                    <span class="logo-tagline">Студия красоты</span>
+                </a>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Главная</a></li>
+                        <li><a href="about.html" class="nav-link">О студии</a></li>
+                        <li><a href="services.html" class="nav-link">Услуги</a></li>
+                        <li><a href="works.html" class="nav-link">Наши работы</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="tel:+79281411120" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (928) 141-11-20</span>
+                    </a>
+                    <button class="btn btn-primary btn-callback">Записаться</button>
+                    <button class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <img src="https://placehold.co/1920x1152/3a2a2b/E8B4B8?text=K-profi%20%D0%BA%D0%BE%D1%81%D0%BC%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F" alt="K-profi косметология" class="hero-image">
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Профессиональная косметология</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="hero-title-main">Уверенность в своей красоте</span>
+                    <span class="hero-title-sub">начинается здесь</span>
+                </h1>
+
+                <p class="hero-description">
+                    Лазерная эпиляция последнего поколения и профессиональные косметологические процедуры в центре Ростова-на-Дону
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-large btn-white btn-callback">
+                        <span>Записаться на процедуру</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <a href="#services" class="btn btn-large btn-outline-white">
+                        <span>Наши услуги</span>
+                    </a>
+                </div>
+
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-certificate"></i>
+                        <span>Сертифицированные специалисты</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Безопасные процедуры</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-award"></i>
+                        <span>Современное оборудование</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Прокрутите вниз</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Что мы предлагаем</span>
+                <h2 class="section-title">Популярные услуги</h2>
+                <p class="section-description">
+                    Широкий спектр косметологических процедур для вашей красоты и уверенности
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%9B%D0%B0%D0%B7%D0%B5%D1%80%D0%BD%D0%B0%D1%8F%20%D1%8D%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D1%8F" alt="Лазерная эпиляция">
+                        <div class="service-card-overlay">
+                            <a href="services.html#laser" class="btn btn-white">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
+                        <h3 class="service-card-title">Лазерная эпиляция</h3>
+                        <p class="service-card-text">
+                            Удаление нежелательных волос диодным лазером последнего поколения. Безболезненно и эффективно.
+                        </p>
+                        <div class="service-card-price">
+                            <span class="price-label">От</span>
+                            <span class="price-value">800 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="img/photo-1616394584738-fc6e612e71b9.jpg" alt="Уход за лицом">
+                        <div class="service-card-overlay">
+                            <a href="services.html#facial" class="btn btn-white">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3 class="service-card-title">Уход за лицом</h3>
+                        <p class="service-card-text">
+                            Профессиональные чистки, пилинги и массажи лица для здоровой и сияющей кожи.
+                        </p>
+                        <div class="service-card-price">
+                            <span class="price-label">От</span>
+                            <span class="price-value">1 500 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%A3%D1%85%D0%BE%D0%B4%20%D0%B7%D0%B0%20%D1%82%D0%B5%D0%BB%D0%BE%D0%BC" alt="Уход за телом">
+                        <div class="service-card-overlay">
+                            <a href="services.html#body" class="btn btn-white">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="service-card-title">Уход за телом</h3>
+                        <p class="service-card-text">
+                            Обертывания, массажи и процедуры для красоты и здоровья вашего тела.
+                        </p>
+                        <div class="service-card-price">
+                            <span class="price-label">От</span>
+                            <span class="price-value">2 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="https://placehold.co/600x360/3a2a2b/E8B4B8?text=%D0%98%D0%BD%D1%8A%D0%B5%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D1%81%D0%BC%D0%B5.." alt="Инъекционная косметология">
+                        <div class="service-card-overlay">
+                            <a href="services.html#injections" class="btn btn-white">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-card-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h3 class="service-card-title">Инъекционная косметология</h3>
+                        <p class="service-card-text">
+                            Биоревитализация, мезотерапия и контурная пластика от опытных косметологов.
+                        </p>
+                        <div class="service-card-price">
+                            <span class="price-label">От</span>
+                            <span class="price-value">3 500 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-footer">
+                <a href="services.html" class="btn btn-large btn-primary">
+                    <span>Все услуги</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-preview-grid">
+                <div class="about-preview-content">
+                    <span class="section-subtitle">О студии K-profi</span>
+                    <h2 class="section-title">Профессиональный уход за вашей красотой</h2>
+
+                    <p class="about-preview-text">
+                        K-profi — это современная студия косметологии в самом центре Ростова-на-Дону, где каждая процедура выполняется с заботой о вашем комфорте и красоте.
+                    </p>
+
+                    <p class="about-preview-text">
+                        Наши специалисты регулярно проходят обучение и используют только проверенные методики и современное оборудование европейского качества.
+                    </p>
+
+                    <ul class="about-preview-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Сертифицированные косметологи с опытом работы от 5 лет</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Диодный лазер последнего поколения для эпиляции</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Профессиональная косметика премиум-класса</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Индивидуальный подход к каждому клиенту</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Комфортные процедурные кабинеты</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Удобное расположение в центре города</span>
+                        </li>
+                    </ul>
+
+                    <a href="about.html" class="btn btn-large btn-primary">
+                        <span>Подробнее о нас</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="about-preview-images">
+                    <div class="about-preview-image-main">
+                        <img src="img/photo-1629909613654-28e377c37b09.jpg" alt="K-profi студия">
+                    </div>
+                    <div class="about-preview-image-small">
+                        <img src="https://placehold.co/400x240/3a2a2b/E8B4B8?text=%D0%9A%D0%BE%D1%81%D0%BC%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20.." alt="Косметологический кабинет">
+                    </div>
+                    <div class="about-preview-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label">лет работы</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">довольных клиентов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-subtitle">Почему выбирают нас</span>
+                <h2 class="section-title">Преимущества K-profi</h2>
+            </div>
+
+            <div class="why-choose-grid">
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="why-card-title">Опытные специалисты</h3>
+                    <p class="why-card-text">
+                        Наши косметологи имеют медицинское образование и регулярно повышают квалификацию
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="why-card-title">Современное оборудование</h3>
+                    <p class="why-card-text">
+                        Используем только проверенные аппараты европейского производства
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="why-card-title">Качественная косметика</h3>
+                    <p class="why-card-text">
+                        Работаем с профессиональными брендами премиум-сегмента
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="why-card-title">Безопасность процедур</h3>
+                    <p class="why-card-text">
+                        Соблюдаем все стандарты стерильности и безопасности
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="why-card-title">Индивидуальный подход</h3>
+                    <p class="why-card-text">
+                        Подбираем процедуры с учетом особенностей вашей кожи
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <i class="fas fa-ruble-sign"></i>
+                    </div>
+                    <h3 class="why-card-title">Доступные цены</h3>
+                    <p class="why-card-text">
+                        Предлагаем выгодные акции и программы лояльности
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before After Section -->
+    <section class="before-after">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-subtitle">Результаты наших работ</span>
+                <h2 class="section-title">До и после процедур</h2>
+                <p class="section-description">
+                    Убедитесь в эффективности наших процедур на примере реальных результатов
+                </p>
+            </div>
+
+            <div class="before-after-slider">
+                <div class="before-after-slide">
+                    <div class="before-after-item">
+                        <img src="https://placehold.co/700x420/3a2a2b/E8B4B8?text=%D0%A0%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80" alt="Результаты процедур">
+                        <div class="before-after-label">
+                            <span class="procedure-name">Лазерная эпиляция</span>
+                            <span class="procedure-result">После 4 процедур</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="before-after-slide">
+                    <div class="before-after-item">
+                        <img src="https://placehold.co/700x420/3a2a2b/E8B4B8?text=%D0%A3%D1%85%D0%BE%D0%B4%20%D0%B7%D0%B0%20%D0%BB%D0%B8%D1%86%D0%BE%D0%BC" alt="Уход за лицом">
+                        <div class="before-after-label">
+                            <span class="procedure-name">Чистка лица</span>
+                            <span class="procedure-result">Мгновенный эффект</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="before-after-slide">
+                    <div class="before-after-item">
+                        <img src="https://placehold.co/700x420/3a2a2b/E8B4B8?text=%D0%9F%D0%B8%D0%BB%D0%B8%D0%BD%D0%B3%20%D0%BB%D0%B8%D1%86%D0%B0" alt="Пилинг лица">
+                        <div class="before-after-label">
+                            <span class="procedure-name">Химический пилинг</span>
+                            <span class="procedure-result">Через 2 недели</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button class="slider-btn slider-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots"></div>
+                <button class="slider-btn slider-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="section-footer">
+                <a href="works.html" class="btn btn-large btn-primary">
+                    <span>Смотреть все работы</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-subtitle">Отзывы клиентов</span>
+                <h2 class="section-title">Что говорят о нас</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://i.pravatar.cc/100?img=1" alt="Елена">
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-name">Елена Соколова</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Делала лазерную эпиляцию в K-profi, очень довольна результатом! Процедура практически безболезненная, а эффект виден уже после первого сеанса. Девочки профессионалы своего дела, всё объясняют и следят за комфортом клиента.
+                    </p>
+                    <div class="review-service">Лазерная эпиляция</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://i.pravatar.cc/100?img=5" alt="Анна">
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-name">Анна Петрова</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Прекрасная студия! Ходила на чистку лица и химический пилинг. Косметолог Мария настоящий профессионал, подобрала идеальный уход для моей кожи. Кабинеты чистые и уютные, атмосфера располагающая. Обязательно вернусь!
+                    </p>
+                    <div class="review-service">Уход за лицом</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://i.pravatar.cc/100?img=10" alt="Мария">
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-name">Мария Иванова</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Искала студию для биоревитализации и не ошиблась с выбором. Процедуру провели на высшем уровне, кожа сразу стала более увлажненной и подтянутой. Цены адекватные, персонал вежливый и внимательный. Рекомендую!
+                    </p>
+                    <div class="review-service">Инъекционная косметология</div>
+                </div>
+            </div>
+
+            <div class="section-footer">
+                <div class="reviews-summary">
+                    <div class="reviews-rating">
+                        <span class="rating-value">5.0</span>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-count">На основе 150+ отзывов</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="statistics-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="7">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">лет работы</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="5000">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">довольных клиентов</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="15000">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">выполненных процедур</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-plus">%</span>
+                        <span class="stat-label">клиентов возвращаются</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-subtitle">Часто задаваемые вопросы</span>
+                <h2 class="section-title">Ответы на ваши вопросы</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Насколько болезненна лазерная эпиляция?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Современные диодные лазеры оснащены системой охлаждения, которая делает процедуру максимально комфортной. Большинство клиентов описывают ощущения как легкое покалывание. На чувствительных зонах возможно использование обезболивающего крема.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько процедур лазерной эпиляции необходимо?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В среднем требуется 6-8 процедур для достижения стойкого результата. Количество зависит от индивидуальных особенностей: типа кожи, цвета и структуры волос, гормонального фона. Интервал между процедурами составляет 4-6 недель.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли противопоказания к лазерной эпиляции?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Основные противопоказания: беременность и лактация, онкологические заболевания, воспалительные процессы на коже, свежий загар (менее 2 недель), прием фотосенсибилизирующих препаратов. Перед процедурой обязательна консультация косметолога.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как подготовиться к процедуре?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>За 2 недели до процедуры нельзя загорать и посещать солярий. За день до сеанса необходимо сбрить волосы в зоне обработки. Не использовать кремы и лосьоны в день процедуры. После эпиляции избегать солнца и использовать солнцезащитный крем.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие процедуры для лица вы рекомендуете для первого раза?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Для первого визита рекомендуем комплексную чистку лица или базовый уход. Это позволит косметологу оценить состояние кожи и подобрать оптимальную программу ухода. После консультации можем предложить пилинги, массажи или аппаратные процедуры.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли делать процедуры летом?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Большинство процедур можно проводить круглый год. Однако после лазерной эпиляции, химических пилингов и некоторых аппаратных методик необходимо избегать прямых солнечных лучей и использовать SPF-защиту. Косметолог даст индивидуальные рекомендации по уходу.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="cta-title">Запишитесь на консультацию прямо сейчас</h2>
+                    <p class="cta-description">
+                        Наши специалисты подберут оптимальные процедуры для достижения ваших целей
+                    </p>
+                    <ul class="cta-features">
+                        <li><i class="fas fa-check"></i> Бесплатная консультация</li>
+                        <li><i class="fas fa-check"></i> Скидка 20% на первую процедуру</li>
+                        <li><i class="fas fa-check"></i> Гибкий график работы</li>
+                    </ul>
+                </div>
+                <div class="cta-form-wrapper">
+                    <form class="cta-form" id="ctaForm">
+                        <h3 class="form-title">Оставьте заявку</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" required>
+                                <option value="">Интересующая услуга</option>
+                                <option value="laser">Лазерная эпиляция</option>
+                                <option value="facial">Уход за лицом</option>
+                                <option value="body">Уход за телом</option>
+                                <option value="injections">Инъекционная косметология</option>
+                                <option value="consultation">Консультация</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-large btn-white btn-full">
+                            <span>Записаться</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <p class="form-privacy">
+                            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">K-profi</span>
+                        <span class="logo-tagline">Студия красоты</span>
+                    </a>
+                    <p class="footer-description">
+                        Профессиональная косметология и лазерная эпиляция в центре Ростова-на-Дону
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://vk.com/kprofi" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me/kprofi" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/79281411120" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/kprofi" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О студии</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="works.html">Наши работы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#laser">Лазерная эпиляция</a></li>
+                        <li><a href="services.html#facial">Уход за лицом</a></li>
+                        <li><a href="services.html#body">Уход за телом</a></li>
+                        <li><a href="services.html#injections">Инъекционная косметология</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>пер. Семашко, 113<br>Ростов-на-Дону</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+79281411120">+7 (928) 141-11-20</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Вс: 9:00 - 21:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 K-profi. Все права защищены.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Публичная оферта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Callback Modal -->
+    <div class="modal" id="callbackModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-header">
+                <h3 class="modal-title">Записаться на процедуру</h3>
+                <p class="modal-description">Оставьте ваши контакты, и мы свяжемся с вами в ближайшее время</p>
+            </div>
+
+            <form class="modal-form" id="callbackForm">
+                <div class="form-group">
+                    <label class="form-label">Ваше имя</label>
+                    <input type="text" class="form-input" placeholder="Введите ваше имя" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Телефон</label>
+                    <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Интересующая услуга</label>
+                    <select class="form-input" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="laser">Лазерная эпиляция</option>
+                        <option value="facial">Уход за лицом</option>
+                        <option value="body">Уход за телом</option>
+                        <option value="injections">Инъекционная косметология</option>
+                        <option value="consultation">Консультация</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-large btn-primary btn-full">
+                    <span>Отправить заявку</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <p class="form-privacy">
+                    Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/79281411120" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js?v=3"></script>
+
+</body>
+</html>

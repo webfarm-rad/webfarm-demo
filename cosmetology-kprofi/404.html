@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена — K-profi</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fa/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="error-page">
+        <div class="error-container">
+            <div class="error-content">
+                <h1 class="error-code">404</h1>
+                <h2 class="error-title">Страница не найдена</h2>
+                <p class="error-description">
+                    К сожалению, запрашиваемая страница не существует или была перемещена.
+                </p>
+
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-large btn-primary">
+                        <i class="fas fa-home"></i>
+                        <span>На главную</span>
+                    </a>
+                    <a href="services.html" class="btn btn-large btn-white">
+                        <i class="fas fa-spa"></i>
+                        <span>Наши услуги</span>
+                    </a>
+                </div>
+
+                <div class="error-links">
+                    <h3>Популярные страницы:</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Услуги и цены</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> О студии</a></li>
+                        <li><a href="contacts.html"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="error-image">
+                <img src="img/photo-1616394584738-fc6e612e71b9.jpg" alt="K-profi">
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #3D3052 0%, #5C4A75 100%);
+            padding: 40px 20px;
+        }
+
+        .error-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .error-content {
+            color: #fff;
+        }
+
+        .error-code {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8rem;
+            font-weight: 800;
+            color: #E8B4B8;
+            line-height: 1;
+            margin-bottom: 24px;
+        }
+
+        .error-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+
+        .error-description {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+        }
+
+        .error-links h3 {
+            font-size: 1.25rem;
+            color: #E8B4B8;
+            margin-bottom: 16px;
+        }
+
+        .error-links ul {
+            list-style: none;
+        }
+
+        .error-links li {
+            margin-bottom: 12px;
+        }
+
+        .error-links a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+        }
+
+        .error-links a:hover {
+            color: #E8B4B8;
+            transform: translateX(8px);
+        }
+
+        .error-image {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .error-image img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 992px) {
+            .error-container {
+                grid-template-columns: 1fr;
+            }
+
+            .error-code {
+                font-size: 6rem;
+            }
+
+            .error-title {
+                font-size: 2rem;
+            }
+
+            .error-image img {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 4rem;
+            }
+
+            .error-title {
+                font-size: 1.5rem;
+            }
+
+            .error-description {
+                font-size: 1rem;
+            }
+
+            .error-actions {
+                flex-direction: column;
+            }
+
+            .error-actions .btn {
+                width: 100%;
+            }
+        }
+    </style>
+
+</body>
+</html>
