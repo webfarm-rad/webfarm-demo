@@ -149,82 +149,235 @@
         <div class="container">
             <div class="section__header scroll-hidden">
                 <span class="section__label">Что мы делаем</span>
-                <h2 class="section__title">Услуги и цены</h2>
-                <p class="section__subtitle">Полный спектр работ по обслуживанию и ремонту автомобилей любых марок</p>
+                <h2 class="section__title">Найдите свою проблему</h2>
+                <p class="section__subtitle">Выберите категорию — покажем, что именно мы делаем и сколько это стоит</p>
             </div>
 
-            <div class="services__grid">
-                <div class="service-card scroll-hidden">
-                    <div class="service-card__icon"><i class="fas fa-oil-can"></i></div>
-                    <div class="service-card__body">
-                        <h3 class="service-card__title">Техническое обслуживание</h3>
-                        <p class="service-card__desc">Плановое ТО по регламенту производителя. Замена масла, фильтров, технических жидкостей.</p>
-                        <span class="service-card__price">от 3 500 ₽</span>
+            <!-- Tabs -->
+            <div class="services-tabs scroll-hidden">
+                <button class="services-tab active" data-tab="engine"><i class="fas fa-cog"></i> Двигатель</button>
+                <button class="services-tab" data-tab="suspension"><i class="fas fa-car-side"></i> Ходовая</button>
+                <button class="services-tab" data-tab="brakes"><i class="fas fa-circle-stop"></i> Тормоза</button>
+                <button class="services-tab" data-tab="electrics"><i class="fas fa-bolt"></i> Электрика</button>
+                <button class="services-tab" data-tab="body"><i class="fas fa-car-burst"></i> Кузов</button>
+                <button class="services-tab" data-tab="maintenance"><i class="fas fa-oil-can"></i> ТО</button>
+            </div>
+
+            <!-- Tab Panels -->
+            <div class="services-panels">
+
+                <!-- ENGINE -->
+                <div class="services-panel active" data-panel="engine">
+                    <div class="services-panel__header">
+                        <h3 class="services-panel__title">Ремонт двигателя</h3>
+                        <span class="services-panel__note"><i class="fas fa-magnifying-glass"></i> Диагностика — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Загорелся Check Engine</div>
+                            <div class="service-row__solution">Компьютерная диагностика, считывание ошибок, устранение причины</div>
+                            <div class="service-row__price">от 1 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Двигатель троит, вибрирует</div>
+                            <div class="service-row__solution">Диагностика системы зажигания, замена свечей, катушек, форсунок</div>
+                            <div class="service-row__price">от 2 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Перегревается мотор</div>
+                            <div class="service-row__solution">Проверка системы охлаждения, замена термостата, помпы, радиатора</div>
+                            <div class="service-row__price">от 3 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Течёт масло</div>
+                            <div class="service-row__solution">Замена прокладок, сальников коленвала, клапанной крышки</div>
+                            <div class="service-row__price">от 2 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Стук / шум в двигателе</div>
+                            <div class="service-row__solution">Диагностика, замена цепи/ремня ГРМ, гидрокомпенсаторов</div>
+                            <div class="service-row__price">от 5 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Упала мощность, не тянет</div>
+                            <div class="service-row__solution">Проверка турбины, топливной системы, замена фильтров, чистка дросселя</div>
+                            <div class="service-row__price">от 1 500 ₽</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="service-card scroll-hidden">
-                    <div class="service-card__icon"><i class="fas fa-laptop-code"></i></div>
-                    <div class="service-card__body">
-                        <h3 class="service-card__title">Диагностика</h3>
-                        <p class="service-card__desc">Компьютерная диагностика двигателя, ходовой части, электрики. Точное определение неисправности.</p>
-                        <span class="service-card__price service-card__price--free">Бесплатно</span>
+                <!-- SUSPENSION -->
+                <div class="services-panel" data-panel="suspension">
+                    <div class="services-panel__header">
+                        <h3 class="services-panel__title">Ходовая часть и подвеска</h3>
+                        <span class="services-panel__note"><i class="fas fa-magnifying-glass"></i> Диагностика — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Стук при проезде неровностей</div>
+                            <div class="service-row__solution">Замена стоек стабилизатора, шаровых опор, сайлентблоков рычагов</div>
+                            <div class="service-row__price">от 1 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Машину тянет в сторону</div>
+                            <div class="service-row__solution">Развал-схождение на 3D-стенде, проверка рулевых наконечников</div>
+                            <div class="service-row__price">от 2 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Гудит при повороте руля</div>
+                            <div class="service-row__solution">Замена ШРУСов, подшипника ступицы, проверка ГУР</div>
+                            <div class="service-row__price">от 2 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Машина «плавает» на дороге</div>
+                            <div class="service-row__solution">Замена амортизаторов, пружин, опорных подшипников</div>
+                            <div class="service-row__price">от 3 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Хруст при повороте</div>
+                            <div class="service-row__solution">Замена ШРУСа наружного/внутреннего, пыльников</div>
+                            <div class="service-row__price">от 2 000 ₽</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="service-card scroll-hidden">
-                    <div class="service-card__icon"><i class="fas fa-cog"></i></div>
-                    <div class="service-card__body">
-                        <h3 class="service-card__title">Ремонт двигателя</h3>
-                        <p class="service-card__desc">Капитальный и текущий ремонт двигателей. Замена ГРМ, прокладок, сальников, цепей.</p>
-                        <span class="service-card__price">от 5 000 ₽</span>
+                <!-- BRAKES -->
+                <div class="services-panel" data-panel="brakes">
+                    <div class="services-panel__header">
+                        <h3 class="services-panel__title">Тормозная система</h3>
+                        <span class="services-panel__note"><i class="fas fa-magnifying-glass"></i> Диагностика — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Скрипят тормоза</div>
+                            <div class="service-row__solution">Замена тормозных колодок, проточка или замена дисков</div>
+                            <div class="service-row__price">от 1 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Педаль тормоза проваливается</div>
+                            <div class="service-row__solution">Прокачка тормозной системы, замена жидкости, ремонт суппортов</div>
+                            <div class="service-row__price">от 2 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Биение руля при торможении</div>
+                            <div class="service-row__solution">Проточка или замена тормозных дисков, проверка суппортов</div>
+                            <div class="service-row__price">от 2 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Горит лампа ABS / ESP</div>
+                            <div class="service-row__solution">Диагностика датчиков ABS, проверка блока, замена датчиков</div>
+                            <div class="service-row__price">от 1 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Ручник не держит</div>
+                            <div class="service-row__solution">Регулировка или замена тросов, ремонт механизма стояночного тормоза</div>
+                            <div class="service-row__price">от 1 000 ₽</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="service-card scroll-hidden">
-                    <div class="service-card__icon"><i class="fas fa-car-side"></i></div>
-                    <div class="service-card__body">
-                        <h3 class="service-card__title">Ходовая часть</h3>
-                        <p class="service-card__desc">Замена рычагов, стоек, подшипников, ШРУСов. Развал-схождение на стенде.</p>
-                        <span class="service-card__price">от 2 000 ₽</span>
+                <!-- ELECTRICS -->
+                <div class="services-panel" data-panel="electrics">
+                    <div class="services-panel__header">
+                        <h3 class="services-panel__title">Электрика и электроника</h3>
+                        <span class="services-panel__note"><i class="fas fa-magnifying-glass"></i> Диагностика — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Не заводится машина</div>
+                            <div class="service-row__solution">Диагностика стартера, АКБ, замка зажигания, проводки</div>
+                            <div class="service-row__price">от 1 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Быстро садится аккумулятор</div>
+                            <div class="service-row__solution">Проверка утечки тока, диагностика генератора, замена АКБ</div>
+                            <div class="service-row__price">от 1 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Не работают фары / габариты</div>
+                            <div class="service-row__solution">Замена ламп, ремонт проводки, восстановление контактов</div>
+                            <div class="service-row__price">от 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Не работает кондиционер</div>
+                            <div class="service-row__solution">Заправка фреоном, замена компрессора, проверка радиатора</div>
+                            <div class="service-row__price">от 2 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Горят лампочки на приборной панели</div>
+                            <div class="service-row__solution">Компьютерная диагностика, считывание кодов ошибок, устранение</div>
+                            <div class="service-row__price">от 1 000 ₽</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="service-card scroll-hidden">
-                    <div class="service-card__icon"><i class="fas fa-circle-stop"></i></div>
-                    <div class="service-card__body">
-                        <h3 class="service-card__title">Тормозная система</h3>
-                        <p class="service-card__desc">Замена колодок, дисков, суппортов. Прокачка тормозной системы, замена жидкости.</p>
-                        <span class="service-card__price">от 1 500 ₽</span>
+                <!-- BODY -->
+                <div class="services-panel" data-panel="body">
+                    <div class="services-panel__header">
+                        <h3 class="services-panel__title">Кузовной ремонт</h3>
+                        <span class="services-panel__note"><i class="fas fa-ruler-combined"></i> Оценка — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Вмятина на кузове</div>
+                            <div class="service-row__solution">Удаление вмятин без покраски (PDR) или классическая рихтовка</div>
+                            <div class="service-row__price">от 2 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Царапина / скол</div>
+                            <div class="service-row__solution">Локальная покраска, полировка, подкраска сколов</div>
+                            <div class="service-row__price">от 1 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Ржавчина на кузове</div>
+                            <div class="service-row__solution">Зачистка, антикоррозийная обработка, грунтовка, покраска</div>
+                            <div class="service-row__price">от 3 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-exclamation-triangle"></i> Повреждение бампера</div>
+                            <div class="service-row__solution">Ремонт или замена бампера, покраска в цвет кузова</div>
+                            <div class="service-row__price">от 3 500 ₽</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="service-card scroll-hidden">
-                    <div class="service-card__icon"><i class="fas fa-bolt"></i></div>
-                    <div class="service-card__body">
-                        <h3 class="service-card__title">Электрика</h3>
-                        <p class="service-card__desc">Диагностика и ремонт электрооборудования. Генераторы, стартеры, проводка, датчики.</p>
-                        <span class="service-card__price">от 1 000 ₽</span>
+                <!-- MAINTENANCE -->
+                <div class="services-panel" data-panel="maintenance">
+                    <div class="services-panel__header">
+                        <h3 class="services-panel__title">Техническое обслуживание</h3>
+                        <span class="services-panel__note"><i class="fas fa-calendar-check"></i> По регламенту производителя</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-clock"></i> Пришло время ТО</div>
+                            <div class="service-row__solution">Замена масла, фильтров (масляный, воздушный, салонный), технических жидкостей</div>
+                            <div class="service-row__price">от 3 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-clock"></i> Сезонная замена шин</div>
+                            <div class="service-row__solution">Шиномонтаж, балансировка 4 колёс, проверка давления</div>
+                            <div class="service-row__price">от 1 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-clock"></i> Замена ремня/цепи ГРМ</div>
+                            <div class="service-row__solution">Замена ремня ГРМ с роликами, помпой, проверка меток</div>
+                            <div class="service-row__price">от 5 000 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem"><i class="fas fa-clock"></i> Подготовка к зиме / лету</div>
+                            <div class="service-row__solution">Проверка АКБ, антифриза, тормозов, подвески, замена щёток</div>
+                            <div class="service-row__price">от 2 000 ₽</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="service-card scroll-hidden">
-                    <div class="service-card__icon"><i class="fas fa-car-burst"></i></div>
-                    <div class="service-card__body">
-                        <h3 class="service-card__title">Кузовной ремонт</h3>
-                        <p class="service-card__desc">Рихтовка, покраска, полировка. Устранение вмятин без покраски, антикоррозийная обработка.</p>
-                        <span class="service-card__price">от 3 000 ₽</span>
-                    </div>
-                </div>
+            </div>
 
-                <div class="service-card scroll-hidden">
-                    <div class="service-card__icon"><i class="fas fa-circle"></i></div>
-                    <div class="service-card__body">
-                        <h3 class="service-card__title">Шиномонтаж</h3>
-                        <p class="service-card__desc">Сезонная замена шин, балансировка колёс, ремонт проколов, хранение шин.</p>
-                        <span class="service-card__price">от 1 500 ₽</span>
-                    </div>
-                </div>
+            <div class="services__cta scroll-hidden">
+                <p>Не нашли свою проблему? Опишите симптом — подскажем, что делать</p>
+                <a href="https://wa.me/78612345678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> Описать проблему
+                </a>
             </div>
         </div>
     </section>

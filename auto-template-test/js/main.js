@@ -115,7 +115,26 @@
   }
 
   /* ==========================================================================
-     6. Counter animation
+     6. Services Tabs
+     ========================================================================== */
+  var tabs = document.querySelectorAll('.services-tab');
+  var panels = document.querySelectorAll('.services-panel');
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var target = this.getAttribute('data-tab');
+
+      tabs.forEach(function (t) { t.classList.remove('active'); });
+      panels.forEach(function (p) { p.classList.remove('active'); });
+
+      this.classList.add('active');
+      var panel = document.querySelector('[data-panel="' + target + '"]');
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  /* ==========================================================================
+     7. Counter animation
      ========================================================================== */
   var counters = document.querySelectorAll('.counter');
 
