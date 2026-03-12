@@ -443,18 +443,7 @@
         }
     });
 
-    // ====================================
-    // Parallax Effect for Hero
-    // ====================================
-    const heroBg = document.querySelector('.hero-bg img');
-
-    if (heroBg) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * 0.5;
-            heroBg.style.transform = `translateY(${rate}px)`;
-        });
-    }
+    // Parallax removed — caused overlay desync with background image
 
     // ====================================
     // Service Cards Hover Effect
