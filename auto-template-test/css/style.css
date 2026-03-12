@@ -1176,70 +1176,56 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-sm);
 }
 
-/* ---------- Gallery ---------- */
-.gallery__grid {
+/* ---------- Car Brands ---------- */
+.brands__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
 
-.gallery__item {
-  position: relative;
+.brand-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 16px;
+  background: var(--color-card);
   border-radius: var(--radius-md);
-  overflow: hidden;
-  aspect-ratio: 4 / 3;
-  cursor: pointer;
+  border: 1px solid var(--color-border);
+  transition: border-color var(--transition-base), transform var(--transition-base);
 }
 
-.gallery__item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+.brand-item:hover {
+  border-color: rgba(46, 125, 50, 0.3);
+  transform: translateY(-3px);
 }
 
-.gallery__item::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 50%, rgba(27, 31, 35, 0.5) 100%);
-  opacity: 0;
+.brand-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  opacity: 0.7;
   transition: opacity var(--transition-base);
 }
 
-.gallery__item:hover img {
-  transform: scale(1.06);
-}
-
-.gallery__item:hover::after {
+.brand-item:hover img {
   opacity: 1;
 }
 
-.gallery__caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 16px 20px;
-  z-index: 2;
+.brand-item span {
   font-family: var(--font-heading);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-xs);
   font-weight: 600;
-  color: #fff;
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity var(--transition-base), transform var(--transition-base);
+  color: var(--color-muted);
+  text-align: center;
 }
 
-.gallery__item:hover .gallery__caption {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Large first item spanning 2 rows */
-.gallery__item--large {
-  grid-row: span 2;
-  aspect-ratio: auto;
+.brands__note {
+  text-align: center;
+  margin-top: var(--space-md);
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+  font-style: italic;
 }
 
 /* ---------- CTA / Booking ---------- */
@@ -1739,13 +1725,9 @@ h1, h2, h3, h4, h5, h6 {
     gap: 20px;
   }
 
-  /* Gallery */
-  .gallery__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .gallery__item--large {
-    grid-row: span 1;
+  /* Brands */
+  .brands__grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   /* Trust Bar */
@@ -1898,9 +1880,14 @@ h1, h2, h3, h4, h5, h6 {
     gap: 10px;
   }
 
-  /* Gallery */
-  .gallery__grid {
-    grid-template-columns: 1fr;
+  /* Brands */
+  .brands__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .brand-item {
+    padding: 20px 12px;
   }
 
   /* Trust Bar */
