@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Надёжный — Автосервис в Челябинске | Ремонт авто всех марок</title>
+    <meta name="description" content="Надёжный — автосервис в Челябинске. Честная диагностика, оригинальные запчасти, гарантия 12 месяцев. Ремонт двигателя, ходовой, тормозов, электрики. Запись: +7 (908) 814-91-22.">
+    <meta name="keywords" content="автосервис Челябинск, ремонт авто Челябинск, диагностика авто, ТО автомобиля, Надёжный">
+    <meta property="og:title" content="Надёжный — Автосервис в Челябинске">
+    <meta property="og:description" content="Профессиональный ремонт авто всех марок. Честная диагностика, оригинальные запчасти, гарантия 12 месяцев.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/hero-bg.jpeg">
+    <meta property="og:url" content="https://auto-nadyozhnyy.example.com/">
+    <link rel="canonical" href="https://auto-nadyozhnyy.example.com/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Golos+Text:wght@400;600&subset=cyrillic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fa/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutomotiveBusiness",
+      "name": "Надёжный",
+      "description": "Автосервис в Челябинске — ремонт автомобилей всех марок. Честная диагностика, оригинальные запчасти, гарантия 12 месяцев.",
+      "url": "https://auto-nadyozhnyy.example.com",
+      "telephone": "+79088149122",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Гранитная ул., 22",
+        "addressLocality": "Челябинск",
+        "addressRegion": "Челябинская обл.",
+        "postalCode": "454000",
+        "addressCountry": "RU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "55.1599",
+        "longitude": "61.4025"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "0"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#hero" class="header__logo">
+                <span class="header__logo-text">Надёжный</span>
+            </a>
+
+            <nav class="header__nav">
+                <a href="#services" class="header__link">Услуги</a>
+                <a href="#about" class="header__link">О нас</a>
+                <a href="#reviews" class="header__link">Отзывы</a>
+                <a href="#contacts" class="header__link">Контакты</a>
+            </nav>
+
+            <a href="tel:+79088149122" class="header__phone">
+                +7 (908) 814-91-22
+            </a>
+
+            <button class="burger" id="burger" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu">
+        <a href="#services" class="mobile-menu__link">Услуги</a>
+        <a href="#about" class="mobile-menu__link">О нас</a>
+        <a href="#reviews" class="mobile-menu__link">Отзывы</a>
+        <a href="#contacts" class="mobile-menu__link">Контакты</a>
+        <a href="tel:+79088149122" class="mobile-menu__phone">
+            <i class="fas fa-phone"></i> +7 (908) 814-91-22
+        </a>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1400&q=80')"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title">Надёжный</h1>
+                <p class="hero__text">Ремонт и обслуживание автомобилей в Челябинске.<br>Диагностика бесплатно. Гарантия 12 мес.</p>
+                <div class="hero__phone-block">
+                    <a href="tel:+79088149122" class="hero__phone-number">+7 (908) 814-91-22</a>
+                    <span class="hero__phone-note">Пн-Сб: 9:00 – 20:00</span>
+                </div>
+                <div class="hero__actions">
+                    <a href="https://wa.me/79088149122?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D0%B0%D1%88%D1%91%D0%BB%20%D0%B2%D0%B0%D1%88%20%D1%81%D0%B0%D0%B9%D1%82%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83." class="btn btn--whatsapp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+                    </a>
+                    <a href="#services" class="btn btn--ghost">Услуги и цены</a>
+                </div>
+            </div>
+            <div class="hero__aside">
+                <div class="hero__rating">
+                    <span class="hero__rating-num">4.7</span>
+                    <div class="hero__rating-info">
+                        <span class="hero__rating-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                        <span class="hero__rating-source">Яндекс.Карты</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="sec-title">Услуги и цены</h2>
+            <p class="sec-lead">Выберите категорию — покажем, что делаем и сколько стоит. Диагностика по каждому направлению бесплатная.</p>
+
+            <div class="services-tabs scroll-hidden">
+                <button class="services-tab active" data-tab="engine">Двигатель</button>
+                <button class="services-tab" data-tab="suspension">Ходовая</button>
+                <button class="services-tab" data-tab="brakes">Тормоза</button>
+                <button class="services-tab" data-tab="electrics">Электрика</button>
+                <button class="services-tab" data-tab="body">Кузов</button>
+                <button class="services-tab" data-tab="maintenance">ТО</button>
+            </div>
+
+            <div class="services-panels">
+
+                <!-- ENGINE -->
+                <div class="services-panel active" data-panel="engine">
+                    <div class="services-panel__head">
+                        <h3>Ремонт двигателя</h3>
+                        <span class="services-panel__free">Диагностика — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem">Загорелся Check Engine</div>
+                            <div class="service-row__what">Компьютерная диагностика, считывание ошибок, устранение причины</div>
+                            <div class="service-row__price">от 1 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Двигатель троит, вибрирует</div>
+                            <div class="service-row__what">Диагностика зажигания, замена свечей, катушек, форсунок</div>
+                            <div class="service-row__price">от 1 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Перегрев мотора</div>
+                            <div class="service-row__what">Проверка охлаждения, замена термостата, помпы, радиатора</div>
+                            <div class="service-row__price">от 2 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Течёт масло</div>
+                            <div class="service-row__what">Замена прокладок, сальников коленвала, клапанной крышки</div>
+                            <div class="service-row__price">от 2 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Стук или шум в двигателе</div>
+                            <div class="service-row__what">Диагностика, замена цепи/ремня ГРМ, гидрокомпенсаторов</div>
+                            <div class="service-row__price">от 4 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Упала мощность</div>
+                            <div class="service-row__what">Проверка турбины, топливной, замена фильтров, чистка дросселя</div>
+                            <div class="service-row__price">от 1 200 ₽</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUSPENSION -->
+                <div class="services-panel" data-panel="suspension">
+                    <div class="services-panel__head">
+                        <h3>Ходовая и подвеска</h3>
+                        <span class="services-panel__free">Диагностика — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem">Стук на неровностях</div>
+                            <div class="service-row__what">Замена стоек стабилизатора, шаровых, сайлентблоков</div>
+                            <div class="service-row__price">от 1 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Тянет в сторону</div>
+                            <div class="service-row__what">Развал-схождение на 3D-стенде, проверка рулевых наконечников</div>
+                            <div class="service-row__price">от 1 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Гудит при повороте</div>
+                            <div class="service-row__what">Замена ШРУСов, подшипника ступицы, проверка ГУР</div>
+                            <div class="service-row__price">от 2 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Машина «плавает»</div>
+                            <div class="service-row__what">Замена амортизаторов, пружин, опорных подшипников</div>
+                            <div class="service-row__price">от 2 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Хруст при повороте</div>
+                            <div class="service-row__what">Замена ШРУСа наружного/внутреннего, пыльников</div>
+                            <div class="service-row__price">от 1 700 ₽</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BRAKES -->
+                <div class="services-panel" data-panel="brakes">
+                    <div class="services-panel__head">
+                        <h3>Тормозная система</h3>
+                        <span class="services-panel__free">Диагностика — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem">Скрипят тормоза</div>
+                            <div class="service-row__what">Замена колодок, проточка или замена дисков</div>
+                            <div class="service-row__price">от 1 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Педаль проваливается</div>
+                            <div class="service-row__what">Прокачка системы, замена жидкости, ремонт суппортов</div>
+                            <div class="service-row__price">от 1 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Бьёт руль при торможении</div>
+                            <div class="service-row__what">Проточка или замена дисков, проверка суппортов</div>
+                            <div class="service-row__price">от 2 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Горит ABS / ESP</div>
+                            <div class="service-row__what">Диагностика датчиков ABS, проверка блока, замена</div>
+                            <div class="service-row__price">от 1 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Ручник не держит</div>
+                            <div class="service-row__what">Регулировка или замена тросов, ремонт механизма</div>
+                            <div class="service-row__price">от 700 ₽</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ELECTRICS -->
+                <div class="services-panel" data-panel="electrics">
+                    <div class="services-panel__head">
+                        <h3>Электрика и электроника</h3>
+                        <span class="services-panel__free">Диагностика — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem">Не заводится</div>
+                            <div class="service-row__what">Диагностика стартера, АКБ, замка зажигания, проводки</div>
+                            <div class="service-row__price">от 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Садится аккумулятор</div>
+                            <div class="service-row__what">Проверка утечки тока, диагностика генератора, замена АКБ</div>
+                            <div class="service-row__price">от 1 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Не работают фары</div>
+                            <div class="service-row__what">Замена ламп, ремонт проводки, восстановление контактов</div>
+                            <div class="service-row__price">от 500 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Не работает кондиционер</div>
+                            <div class="service-row__what">Заправка фреоном, замена компрессора, проверка радиатора</div>
+                            <div class="service-row__price">от 1 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Лампочки на приборной панели</div>
+                            <div class="service-row__what">Компьютерная диагностика, считывание ошибок, устранение</div>
+                            <div class="service-row__price">от 700 ₽</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BODY -->
+                <div class="services-panel" data-panel="body">
+                    <div class="services-panel__head">
+                        <h3>Кузовной ремонт</h3>
+                        <span class="services-panel__free">Оценка — бесплатно</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem">Вмятина</div>
+                            <div class="service-row__what">Удаление без покраски (PDR) или классическая рихтовка</div>
+                            <div class="service-row__price">от 1 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Царапина или скол</div>
+                            <div class="service-row__what">Локальная покраска, полировка, подкраска сколов</div>
+                            <div class="service-row__price">от 1 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Ржавчина</div>
+                            <div class="service-row__what">Зачистка, антикор, грунтовка, покраска</div>
+                            <div class="service-row__price">от 2 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Бампер</div>
+                            <div class="service-row__what">Ремонт или замена, покраска в цвет кузова</div>
+                            <div class="service-row__price">от 3 200 ₽</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAINTENANCE -->
+                <div class="services-panel" data-panel="maintenance">
+                    <div class="services-panel__head">
+                        <h3>Техническое обслуживание</h3>
+                        <span class="services-panel__free">По регламенту производителя</span>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-row">
+                            <div class="service-row__problem">Плановое ТО</div>
+                            <div class="service-row__what">Замена масла, фильтров, технических жидкостей</div>
+                            <div class="service-row__price">от 3 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Замена шин</div>
+                            <div class="service-row__what">Шиномонтаж, балансировка 4 колёс, проверка давления</div>
+                            <div class="service-row__price">от 1 200 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Ремень / цепь ГРМ</div>
+                            <div class="service-row__what">Замена с роликами, помпой, проверка меток</div>
+                            <div class="service-row__price">от 4 700 ₽</div>
+                        </div>
+                        <div class="service-row">
+                            <div class="service-row__problem">Подготовка к сезону</div>
+                            <div class="service-row__what">Проверка АКБ, антифриза, тормозов, подвески</div>
+                            <div class="service-row__price">от 1 700 ₽</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="services-note scroll-hidden">
+                Не нашли свою проблему? <a href="https://wa.me/79088149122?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D0%B0%D1%88%D1%91%D0%BB%20%D0%B2%D0%B0%D1%88%20%D1%81%D0%B0%D0%B9%D1%82%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83." target="_blank" rel="noopener">Опишите в WhatsApp</a> — подскажем, что делать.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__photo scroll-hidden">
+                    <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=800&q=80" alt="Мастерская Надёжный" width="640" height="480" loading="lazy">
+                </div>
+                <div class="about__text scroll-hidden">
+                    <h2>О мастерской</h2>
+                    <p>Мы в Челябинске уже 10 лет. Знаем местные дороги и какие болячки у каких машин. 5 мастеров, каждый со своей специализацией — но берёмся за всё.</p>
+                    <p>Не пытаемся продать лишнее. Показываем на подъёмнике, объясняем, даём выбор. Если нужна только замена масла — сделаем замену масла, а не «полную диагностику за 5 тысяч».</p>
+                    <div class="about__nums">
+                        <div class="about__num">
+                            <strong>10</strong> лет работы
+                        </div>
+                        <div class="about__num">
+                            <strong>60+</strong> авто / мес
+                        </div>
+                        <div class="about__num">
+                            <strong>12</strong> мес. гарантия
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BRANDS ========== -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <h2 class="sec-title">Работаем со всеми марками</h2>
+            <div class="brands__grid scroll-hidden">
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/toyota/999" alt="Toyota" width="40" height="40" loading="lazy">
+                    <span>Toyota</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/hyundai/999" alt="Hyundai" width="40" height="40" loading="lazy">
+                    <span>Hyundai</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/kia/999" alt="Kia" width="40" height="40" loading="lazy">
+                    <span>Kia</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/volkswagen/999" alt="Volkswagen" width="40" height="40" loading="lazy">
+                    <span>Volkswagen</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/bmw/999" alt="BMW" width="40" height="40" loading="lazy">
+                    <span>BMW</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/mercedes/999" alt="Mercedes" width="40" height="40" loading="lazy">
+                    <span>Mercedes</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/nissan/999" alt="Nissan" width="40" height="40" loading="lazy">
+                    <span>Nissan</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/mazda/999" alt="Mazda" width="40" height="40" loading="lazy">
+                    <span>Mazda</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/ford/999" alt="Ford" width="40" height="40" loading="lazy">
+                    <span>Ford</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/renault/999" alt="Renault" width="40" height="40" loading="lazy">
+                    <span>Renault</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/skoda/999" alt="Škoda" width="40" height="40" loading="lazy">
+                    <span>Škoda</span>
+                </div>
+                <div class="brand-item">
+                    <img src="https://cdn.simpleicons.org/lada/999" alt="LADA" width="40" height="40" loading="lazy">
+                    <span>LADA</span>
+                </div>
+            </div>
+            <p class="brands__more scroll-hidden">и другие — спросите, если не нашли свою</p>
+        </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="reviews__head scroll-hidden">
+                <h2 class="sec-title">Отзывы</h2>
+                <div class="reviews__score">
+                    <span class="reviews__score-num">4.7</span>
+                    <span class="reviews__score-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    <span class="reviews__score-count">Яндекс.Карты</span>
+                </div>
+            </div>
+
+            <div class="reviews__list">
+                <div class="review scroll-hidden">
+                    <div class="review__stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review__text">Делали капиталку двигателя на X3. Работа не простая, но справились. Присылали фото каждого этапа. Мотор работает, проехал уже 15 тысяч — всё нормально.</p>
+                    <div class="review__author">
+                        <span class="review__name">Дмитрий В.</span>
+                        <span class="review__car">BMW X3</span>
+                    </div>
+                </div>
+
+                <div class="review scroll-hidden">
+                    <div class="review__stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review__text">Рулевая рейка потекла. В другом сервисе сказали менять целиком за 25 тысяч. Тут отремонтировали за 8. Полгода уже — сухая.</p>
+                    <div class="review__author">
+                        <span class="review__name">Игорь Л.</span>
+                        <span class="review__car">Ford Focus</span>
+                    </div>
+                </div>
+
+                <div class="review scroll-hidden">
+                    <div class="review__stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review__text">Обслуживаю тут Камри третий год. Всегда честно говорят, что менять сейчас, а что подождёт. Никогда не навязывают лишнего.</p>
+                    <div class="review__author">
+                        <span class="review__name">Александр М.</span>
+                        <span class="review__car">Toyota Camry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="sec-title">Частые вопросы</h2>
+
+            <div class="faq__list">
+                <div class="faq-item scroll-hidden">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Диагностика правда бесплатная?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Да. Ставим на подъёмник, подключаем сканер, называем причину. Платите только если решите ремонтировать у нас. Нет — просто уезжаете.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-hidden">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Можно привезти свои запчасти?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Можно. Гарантию на деталь не даём — только на работу. Если запчасти наши — гарантия на всё.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-hidden">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Сколько длится ремонт?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Колодки — 40 минут. ТО — час-два. Двигатель — 1-3 дня. Точные сроки скажем после диагностики.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-hidden">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>С какими марками работаете?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Со всеми. Японские, корейские, немецкие, отечественные. Если нужен узкий специалист — скажем и подскажем куда.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-hidden">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Цена может измениться в процессе?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Названная цена — финальная. Если при разборке найдётся что-то ещё — позвоним и согласуем. Без одобрения ничего не делаем.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-hidden">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Как оплатить?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Наличные, карта, перевод. Даём чек и акт выполненных работ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Диагностика правда бесплатная?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Ставим на подъёмник, подключаем сканер, называем причину. Платите только если решите ремонтировать у нас."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно привезти свои запчасти?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно. Гарантию на деталь не даём — только на работу. Если запчасти наши — гарантия на всё."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько длится ремонт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Колодки — 40 минут. ТО — час-два. Двигатель — 1-3 дня. Точные сроки скажем после диагностики."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С какими марками работаете?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Со всеми. Японские, корейские, немецкие, отечественные."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Цена может измениться в процессе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Названная цена — финальная. Если при разборке найдётся что-то ещё — позвоним и согласуем."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как оплатить?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Наличные, карта, перевод. Даём чек и акт выполненных работ."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- ========== CONTACTS ========== -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__grid">
+                <div class="contacts__info scroll-hidden">
+                    <h2>Контакты</h2>
+                    <dl class="contacts__dl">
+                        <div class="contacts__row">
+                            <dt>Адрес</dt>
+                            <dd>Гранитная ул., 22, Челябинск</dd>
+                        </div>
+                        <div class="contacts__row">
+                            <dt>Телефон</dt>
+                            <dd><a href="tel:+79088149122">+7 (908) 814-91-22</a></dd>
+                        </div>
+                        <div class="contacts__row">
+                            <dt>Время работы</dt>
+                            <dd>Пн-Сб: 9:00 – 20:00</dd>
+                        </div>
+                        <div class="contacts__row">
+                            <dt>WhatsApp</dt>
+                            <dd><a href="https://wa.me/79088149122?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D0%B0%D1%88%D1%91%D0%BB%20%D0%B2%D0%B0%D1%88%20%D1%81%D0%B0%D0%B9%D1%82%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83." target="_blank" rel="noopener">Написать</a></dd>
+                        </div>
+                    </dl>
+                    <div class="contacts__btns">
+                        <a href="https://wa.me/79088149122?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D0%B0%D1%88%D1%91%D0%BB%20%D0%B2%D0%B0%D1%88%20%D1%81%D0%B0%D0%B9%D1%82%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83." class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        
+                        <a href="tel:+79088149122" class="btn btn--dark btn--sm">
+                            <i class="fas fa-phone"></i> Позвонить
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__map scroll-hidden">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=61.4025%2C55.1599&z=16" allowfullscreen loading="lazy" title="Надёжный на карте"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <p class="footer__name">Надёжный</p>
+                    <p class="footer__desc">Автосервис в Челябинске. Ремонт и обслуживание всех марок.<br>Гарантия 12 мес. на работу и запчасти.</p>
+                    <div class="footer__social">
+                        <a href="https://wa.me/79088149122?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D0%B0%D1%88%D1%91%D0%BB%20%D0%B2%D0%B0%D1%88%20%D1%81%D0%B0%D0%B9%D1%82%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        
+                        
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <a href="#services">Услуги и цены</a>
+                        <a href="#about">О мастерской</a>
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#contacts">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__contact">
+                        <span><i class="fas fa-location-dot"></i> Гранитная ул., 22, Челябинск</span>
+                        <a href="tel:+79088149122"><i class="fas fa-phone"></i> +7 (908) 814-91-22</a>
+                        <span><i class="fas fa-clock"></i> Пн-Сб: 9:00 – 20:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Надёжный</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING CONTACT ========== -->
+    <div class="float-contact" id="float-contact">
+        <div class="float-contact__options">
+            <a href="https://wa.me/79088149122?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D0%B0%D1%88%D1%91%D0%BB%20%D0%B2%D0%B0%D1%88%20%D1%81%D0%B0%D0%B9%D1%82%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83." class="float-contact__btn float-contact__btn--wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+            </a>
+            
+            <a href="tel:+79088149122" class="float-contact__btn float-contact__btn--phone" aria-label="Позвонить">
+                <i class="fas fa-phone"></i><span>Позвонить</span>
+            </a>
+        </div>
+        <button class="float-contact__trigger" id="float-contact-trigger" aria-label="Связаться">
+            <i class="fas fa-comment-dots float-contact__icon-open"></i>
+            <i class="fas fa-xmark float-contact__icon-close"></i>
+        </button>
+    </div>
+
+    <!-- ========== MOBILE CTA BAR ========== -->
+    <div class="mobile-cta" id="mobile-cta">
+        <a href="tel:+79088149122" class="mobile-cta__btn">
+            <i class="fas fa-phone"></i><span>Звонок</span>
+        </a>
+        <a href="https://wa.me/79088149122?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D0%B0%D1%88%D1%91%D0%BB%20%D0%B2%D0%B0%D1%88%20%D1%81%D0%B0%D0%B9%D1%82%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83." class="mobile-cta__btn mobile-cta__btn--wa" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+        </a>
+        <a href="#callback" class="mobile-cta__btn mobile-cta__btn--primary" data-modal="callback">
+            <i class="fas fa-calendar-check"></i><span>Записаться</span>
+        </a>
+    </div>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="back-to-top" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ========== CALLBACK MODAL ========== -->
+    <div class="modal-overlay" id="modal-callback">
+        <div class="modal">
+            <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-xmark"></i>
+            </button>
+            <h3 class="modal__title">Заказать звонок</h3>
+            <p class="modal__desc">Перезвоним в течение 15 минут</p>
+            <form class="modal__form" id="callback-form" data-whatsapp-base="https://wa.me/79088149122">
+                <input type="text" name="name" class="modal__input" placeholder="Ваше имя" required autocomplete="name">
+                <input type="tel" name="phone" class="modal__input" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+                <button type="submit" class="modal__submit">
+                    <i class="fab fa-whatsapp"></i>&nbsp; Отправить в WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
