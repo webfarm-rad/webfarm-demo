@@ -609,68 +609,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.85em;
 }
 
-/* ---------- Promo Banner ---------- */
-.promo-banner {
-  background: var(--color-primary);
-  color: #fff;
-  padding: 14px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.promo-banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
-  pointer-events: none;
-}
-
-.promo-banner__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.promo-banner__content {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: var(--fs-sm);
-}
-
-.promo-banner__content i {
-  font-size: 1.2rem;
-  opacity: 0.85;
-}
-
-.promo-banner__text strong {
-  font-weight: 700;
-}
-
-.promo-banner__btn {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 20px;
-  background: #fff;
-  color: var(--color-primary);
-  font-family: var(--font-heading);
-  font-size: var(--fs-xs);
-  font-weight: 700;
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
-  transition: background var(--transition-fast), transform var(--transition-fast);
-}
-
-.promo-banner__btn:hover {
-  background: rgba(255,255,255,0.9);
-  transform: scale(1.03);
-}
-
 /* ---------- Trust Bar ---------- */
 .trust-bar {
   background: #fff;
@@ -965,92 +903,6 @@ h1, h2, h3, h4, h5, h6 {
 .cta {
   clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 100%);
   padding-top: calc(var(--space-xl) + 20px);
-}
-
-/* ---------- Comparison Table ---------- */
-.compare-table {
-  max-width: 900px;
-  margin: 0 auto;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.compare-table table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: var(--fs-sm);
-}
-
-.compare-table thead th {
-  padding: 16px 20px;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: var(--fs-base);
-  text-align: center;
-  border-bottom: 2px solid var(--color-border-light);
-}
-
-.compare-table__feature {
-  text-align: left !important;
-  font-weight: 600;
-  color: var(--color-dark);
-  padding: 14px 20px;
-  white-space: nowrap;
-}
-
-.compare-table__col {
-  text-align: center;
-  padding: 14px 20px;
-  color: #555;
-}
-
-.compare-table__col--us {
-  background: rgba(46, 125, 50, 0.06);
-  color: var(--color-dark);
-  font-weight: 600;
-  position: relative;
-}
-
-.compare-table thead .compare-table__col--us {
-  background: var(--color-primary);
-  color: #fff;
-  border-radius: var(--radius-md) var(--radius-md) 0 0;
-}
-
-.compare-table thead .compare-table__col--us span {
-  display: block;
-  max-width: 180px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin: 0 auto;
-}
-
-.compare-table tbody tr {
-  border-bottom: 1px solid var(--color-border-light);
-}
-
-.compare-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.compare-table tbody tr:last-child .compare-table__col--us {
-  border-radius: 0 0 var(--radius-md) var(--radius-md);
-}
-
-.compare-table tbody tr:hover {
-  background: rgba(0,0,0,0.015);
-}
-
-.compare-yes {
-  color: var(--color-primary);
-  margin-right: 4px;
-}
-
-.compare-no {
-  color: #E53935;
-  margin-right: 4px;
 }
 
 /* ---------- Process Steps ---------- */
@@ -2108,23 +1960,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: var(--space-xl);
   }
 
-  /* Promo banner */
-  .promo-banner__inner {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  /* Comparison */
-  .compare-table__feature {
-    font-size: var(--fs-xs);
-    padding: 10px 12px;
-  }
-
-  .compare-table__col {
-    padding: 10px 8px;
-    font-size: var(--fs-xs);
-  }
 
   /* FAQ */
   .faq-item__question {
@@ -2431,9 +2266,4 @@ h1, h2, h3, h4, h5, h6 {
     right: 74px;
   }
 
-  /* Comparison table scroll hint */
-  .compare-table {
-    margin: 0 -16px;
-    padding: 0 16px;
-  }
 }
