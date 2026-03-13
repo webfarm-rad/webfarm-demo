@@ -4,26 +4,26 @@
    Palette: Dark (#1B1F23) + Green (#2E7D32) + Light (#F8F9FA)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&family=Source+Sans+3:wght@400;600&subset=cyrillic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600;700&family=Nunito:wght@400;600&subset=cyrillic&display=swap');
 
 /* ---------- Custom Properties ---------- */
 :root {
-  --color-dark: #1B1F23;
-  --color-card: #242930;
-  --color-primary: #2E7D32;
-  --color-primary-hover: #388E3C;
-  --color-primary-light: rgba(46, 125, 50, 0.12);
+  --color-dark: #263238;
+  --color-card: #37474F;
+  --color-primary: #546E7A;
+  --color-primary-hover: #607D8B;
+  --color-primary-light: rgba(84, 110, 122, 0.12);
   --color-white: #F5F5F5;
   --color-muted: #9E9E9E;
   --color-light-bg: #F8F9FA;
   --color-border: rgba(255, 255, 255, 0.08);
   --color-border-light: rgba(0, 0, 0, 0.08);
-  --color-success: #43A047;
+  --color-success: #607D8B;
   --color-whatsapp: #25D366;
   --color-telegram: #0088cc;
 
-  --font-heading: 'Exo 2', sans-serif;
-  --font-body: 'Source Sans 3', sans-serif;
+  --font-heading: 'Fira Sans', sans-serif;
+  --font-body: 'Nunito', sans-serif;
 
   --fs-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
   --fs-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
@@ -50,7 +50,7 @@
   --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.14);
   --shadow-card: 0 2px 4px rgba(0,0,0,0.04), 0 8px 20px rgba(0,0,0,0.06);
   --shadow-card-hover: 0 4px 8px rgba(0,0,0,0.06), 0 16px 40px rgba(0,0,0,0.1);
-  --shadow-green: 0 4px 20px rgba(46, 125, 50, 0.35);
+  --shadow-green: 0 4px 20px rgba(84, 110, 122, 0.35);
 
   --transition-fast: 0.2s ease;
   --transition-base: 0.3s ease;
