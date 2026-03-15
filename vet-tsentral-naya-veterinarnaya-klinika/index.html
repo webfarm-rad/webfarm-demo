@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центральная ветеринарная клиника — Ветеринарная клиника в Ульяновске | Круглосуточно</title>
+    <meta name="description" content="Центральная ветеринарная клиника — ветклиника в Ульяновске. Работаем Пн-Сб: 9:00 – 21:00. 6 опытных ветеринаров. УЗИ, рентген, хирургия, стационар. Запись: +7 (951) 095-45-10.">
+    <meta name="keywords" content="ветклиника Ульяновск, ветеринар Ульяновск, ветеринарная клиника, Центральная ветеринарная клиника, ветеринарная помощь">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Центральная ветеринарная клиника — Ветеринарная клиника в Ульяновске">
+    <meta property="og:description" content="6 опытных ветеринаров. Работаем Пн-Сб: 9:00 – 21:00. Диагностика, лечение, хирургия, стационар.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/og-image.jpg">
+    <meta property="og:url" content="https://vet-tsentral-naya-veterinarnaya-klinika.example.com/">
+    <link rel="canonical" href="https://vet-tsentral-naya-veterinarnaya-klinika.example.com/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VeterinaryCare",
+      "name": "Центральная ветеринарная клиника",
+      "description": "Ветеринарная клиника в Ульяновске — полный спектр ветеринарных услуг. 6 опытных специалистов.",
+      "url": "https://vet-tsentral-naya-veterinarnaya-klinika.example.com",
+      "telephone": "+79510954510",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Молочный пер., 16А",
+        "addressLocality": "Ульяновск",
+        "addressRegion": "Ульяновская область",
+        "postalCode": "432000",
+        "addressCountry": "RU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "54.3142",
+        "longitude": "48.4031"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "0"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">
+                <i class="fas fa-paw"></i>
+                <span class="header__logo-text">Центральная ветеринарная клиника</span>
+            </a>
+
+            <nav class="header__nav">
+                <a href="index.html" class="header__link active">Главная</a>
+                <a href="services.html" class="header__link">Услуги</a>
+                <a href="team.html" class="header__link">Специалисты</a>
+                <a href="prices.html" class="header__link">Цены</a>
+                <a href="about.html" class="header__link">О клинике</a>
+                <a href="contacts.html" class="header__link">Контакты</a>
+            </nav>
+
+            <div class="header__actions">
+                <a href="tel:+79510954510" class="header__phone">
+                    <i class="fas fa-phone"></i>
+                    <span>+7 (951) 095-45-10</span>
+                </a>
+                <button class="btn btn--emergency" id="emergencyBtn">
+                    <i class="fas fa-ambulance"></i>
+                    Экстренный вызов
+                </button>
+            </div>
+
+            <button class="burger" id="burger" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__inner">
+            <a href="index.html" class="mobile-menu__link active">Главная</a>
+            <a href="services.html" class="mobile-menu__link">Услуги</a>
+            <a href="team.html" class="mobile-menu__link">Специалисты</a>
+            <a href="prices.html" class="mobile-menu__link">Цены</a>
+            <a href="about.html" class="mobile-menu__link">О клинике</a>
+            <a href="contacts.html" class="mobile-menu__link">Контакты</a>
+            <a href="tel:+79510954510" class="mobile-menu__phone">
+                <i class="fas fa-phone"></i> +7 (951) 095-45-10
+            </a>
+        </div>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1535930749574-1399327ce78f?w=1920&h=1080&fit=crop&q=80')"></div>
+        <div class="hero__overlay"></div>
+
+        <div class="container hero__inner">
+            <div class="hero__content reveal">
+                <div class="hero__badge">
+                    <i class="fas fa-shield-heart"></i>
+                    <span>Работаем 10 лет</span>
+                </div>
+                <h1 class="hero__title">Центральная ветеринарная клиника</h1>
+                <p class="hero__subtitle">Ветеринарная клиника полного цикла в Ульяновске</p>
+                <p class="hero__text">Диагностика • Лечение • Хирургия • Стационар • Груминг</p>
+
+                <div class="hero__emergency-banner">
+                    <i class="fas fa-clock pulse-glow"></i>
+                    <div>
+                        <strong>Работаем Пн-Сб: 9:00 – 21:00</strong>
+                        <span>Выезд ветеринара на дом — 24/7</span>
+                    </div>
+                </div>
+
+                <div class="hero__actions">
+                    <button class="btn btn--primary" id="appointmentBtn">
+                        <i class="fas fa-calendar-check"></i>
+                        Записаться на приём
+                    </button>
+                    <a href="tel:+79510954510" class="btn btn--outline">
+                        <i class="fas fa-phone"></i>
+                        +7 (951) 095-45-10
+                    </a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-num" data-target="6">0</span>
+                        <span class="hero__stat-label">Специалистов</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-num" data-target="800" data-suffix="+">0</span>
+                        <span class="hero__stat-label">Пациентов в год</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-num" data-target="4.4" data-decimals="1">0</span>
+                        <span class="hero__stat-label">Рейтинг на Яндекс</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__aside reveal-right">
+                <div class="hero__rating-card glass-card">
+                    <div class="hero__rating-header">
+                        <svg class="hero__rating-logo" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" fill="#FC3F1D"/></svg>
+                        <div>
+                            <div class="hero__rating-value">4.4</div>
+                            <div class="hero__rating-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="hero__rating-text">0 отзывов</p>
+                    <a href="#reviews" class="hero__rating-link">Читать отзывы <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TRUST BAR ========== -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-grid reveal-stagger">
+                <div class="trust-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Лицензия Россельхознадзора</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-microscope"></i>
+                    <span>Собственная лаборатория</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-hand-holding-medical"></i>
+                    <span>Все виды анализов</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-syringe"></i>
+                    <span>Вакцинация импортными препаратами</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-hospital"></i>
+                    <span>Круглосуточный стационар</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES BENTO ========== -->
+    <section class="section section--services" id="services">
+        <div class="container">
+            <h2 class="sec-title reveal">Наши услуги</h2>
+            <p class="sec-lead reveal">Полный спектр ветеринарных услуг для ваших питомцев</p>
+
+            <div class="bento-grid reveal-stagger">
+                <div class="bento-item bento-item--featured" style="background: linear-gradient(135deg, rgba(14,165,233,0.9), rgba(59,130,246,0.9)), url('https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=800&h=600&fit=crop&q=80') center/cover">
+                    <div class="bento-item__content">
+                        <i class="fas fa-stethoscope"></i>
+                        <h3>Диагностика и лечение</h3>
+                        <p>УЗИ, рентген, ЭКГ, анализы крови и мочи. Постановка диагноза и назначение лечения</p>
+                        <a href="services.html#diagnostics" class="bento-item__link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="bento-item" style="background: linear-gradient(135deg, rgba(168,85,247,0.9), rgba(139,92,246,0.9)), url('https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=600&h=400&fit=crop&q=80') center/cover">
+                    <div class="bento-item__content">
+                        <i class="fas fa-syringe"></i>
+                        <h3>Хирургия</h3>
+                        <p>Плановая и экстренная хирургия</p>
+                        <a href="services.html#surgery" class="bento-item__link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="bento-item bento-item--tall" style="background: linear-gradient(135deg, rgba(236,72,153,0.9), rgba(219,39,119,0.9)), url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=600&fit=crop&q=80') center/cover">
+                    <div class="bento-item__content">
+                        <i class="fas fa-tooth"></i>
+                        <h3>Стоматология</h3>
+                        <p>Чистка зубов, удаление, лечение</p>
+                        <a href="services.html#dentistry" class="bento-item__link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="bento-item bento-item--wide" style="background: linear-gradient(135deg, rgba(34,197,94,0.9), rgba(22,163,74,0.9)), url('https://images.unsplash.com/photo-1581888227599-779811939961?w=800&h=400&fit=crop&q=80') center/cover">
+                    <div class="bento-item__content">
+                        <i class="fas fa-cut"></i>
+                        <h3>Груминг</h3>
+                        <p>Стрижка, тримминг, гигиенические процедуры для собак и кошек</p>
+                        <a href="services.html#grooming" class="bento-item__link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="bento-item" style="background: linear-gradient(135deg, rgba(249,115,22,0.9), rgba(234,88,12,0.9)), url('https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=600&h=400&fit=crop&q=80') center/cover">
+                    <div class="bento-item__content">
+                        <i class="fas fa-house-medical"></i>
+                        <h3>Стационар</h3>
+                        <p>Круглосуточное наблюдение</p>
+                        <a href="services.html#hospital" class="bento-item__link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="bento-item" style="background: linear-gradient(135deg, rgba(99,102,241,0.9), rgba(79,70,229,0.9)), url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=400&fit=crop&q=80') center/cover">
+                    <div class="bento-item__content">
+                        <i class="fas fa-shield-virus"></i>
+                        <h3>Вакцинация</h3>
+                        <p>Импортные вакцины</p>
+                        <a href="services.html#vaccination" class="bento-item__link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section__cta reveal">
+                <a href="services.html" class="btn btn--primary btn--large">
+                    Все услуги и цены <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="sec-title reveal">Как записаться на приём</h2>
+
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step__number">01</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Свяжитесь с нами</h3>
+                        <p class="step__text">Позвоните по телефону +7 (951) 095-45-10, напишите в WhatsApp или Telegram, либо оставьте заявку на сайте</p>
+                    </div>
+                </div>
+
+                <div class="step reveal">
+                    <div class="step__number">02</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Выберите время</h3>
+                        <p class="step__text">Администратор подберёт удобное для вас время приёма и расскажет, как подготовить питомца</p>
+                    </div>
+                </div>
+
+                <div class="step reveal">
+                    <div class="step__number">03</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Приём у ветеринара</h3>
+                        <p class="step__text">Врач проведёт осмотр, диагностику и назначит необходимое лечение. Приём длится 30-40 минут</p>
+                    </div>
+                </div>
+
+                <div class="step reveal">
+                    <div class="step__number">04</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Получите рекомендации</h3>
+                        <p class="step__text">Врач даст подробные рекомендации по уходу, выпишет рецепты и назначит дату следующего визита при необходимости</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEAM PREVIEW ========== -->
+    <section class="section" id="team-preview">
+        <div class="container">
+            <h2 class="sec-title reveal">Наши специалисты</h2>
+            <p class="sec-lead reveal">6 опытных ветеринара с профильным образованием</p>
+
+            <div class="team-grid reveal-stagger">
+                <div class="team-card">
+                    <div class="team-card__photo img-hover-color">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&faces&q=80" alt="Главный врач">
+                    </div>
+                    <div class="team-card__info">
+                        <h3 class="team-card__name">Федорова Екатерина Юрьевна</h3>
+                        <p class="team-card__position">Главный врач, хирург</p>
+                        <p class="team-card__experience">Стаж: 15 лет</p>
+                        <button class="team-card__btn" data-modal="team1">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-card__photo img-hover-color">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&faces&q=80" alt="Терапевт">
+                    </div>
+                    <div class="team-card__info">
+                        <h3 class="team-card__name">Захаров Виктор Петрович</h3>
+                        <p class="team-card__position">Ветеринарный терапевт</p>
+                        <p class="team-card__experience">Стаж: 8 лет</p>
+                        <button class="team-card__btn" data-modal="team2">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-card__photo img-hover-color">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop&faces&q=80" alt="УЗИ-диагност">
+                    </div>
+                    <div class="team-card__info">
+                        <h3 class="team-card__name">Лебедева Татьяна Сергеевна</h3>
+                        <p class="team-card__position">УЗИ-диагност</p>
+                        <p class="team-card__experience">Стаж: 10 лет</p>
+                        <button class="team-card__btn" data-modal="team3">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-card__photo img-hover-color">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&faces&q=80" alt="Стоматолог">
+                    </div>
+                    <div class="team-card__info">
+                        <h3 class="team-card__name">Ильин Максим Викторович</h3>
+                        <p class="team-card__position">Ветеринарный стоматолог</p>
+                        <p class="team-card__experience">Стаж: 6 лет</p>
+                        <button class="team-card__btn" data-modal="team4">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section__cta reveal">
+                <a href="team.html" class="btn btn--outline btn--large">
+                    Все специалисты <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section class="section section--dark" id="reviews">
+        <div class="container">
+            <h2 class="sec-title reveal">Отзывы наших клиентов</h2>
+            <p class="sec-lead reveal">Более 0 благодарных владельцев питомцев</p>
+
+            <div class="reviews-carousel reveal">
+                <div class="reviews-carousel__track">
+                    <div class="review-card">
+                        <div class="review-card__stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="review-card__text">
+                            Привезли кота с высокой температурой поздно вечером. Приняли без вопросов, сразу осмотрели, взяли анализы. Через час уже знали диагноз и начали лечение. Кот поправился за 4 дня. Очень благодарны!
+                        </blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=5" alt="Мария Соколова" class="review-card__avatar">
+                            <div>
+                                <strong class="review-card__name">Мария Соколова</strong>
+                                <span class="review-card__date">Февраль 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-card__stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="review-card__text">
+                            Делали стерилизацию собаке. Врач всё подробно объяснил, рассказал как подготовиться. Операция прошла отлично, собаку держали в стационаре сутки. Шов аккуратный, заживление быстрое. Рекомендую!
+                        </blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=12" alt="Алексей Петров" class="review-card__avatar">
+                            <div>
+                                <strong class="review-card__name">Алексей Петров</strong>
+                                <span class="review-card__date">Январь 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-card__stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="review-card__text">
+                            Ходим на плановые осмотры и вакцинацию уже третий год. Врачи объясняют всё понятно, никогда не навязывают лишнего. Цены разумные, качество на высоте. Лучшая клиника в городе!
+                        </blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=47" alt="Елена Новикова" class="review-card__avatar">
+                            <div>
+                                <strong class="review-card__name">Елена Новикова</strong>
+                                <span class="review-card__date">Декабрь 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-card__stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="review-card__text">
+                            Собака проглотила игрушку, нужна была экстренная операция. Приехали за 20 минут, всё сделали быстро и профессионально. Врач потом звонил, узнавал как дела. Человечное отношение!
+                        </blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=33" alt="Дмитрий Волков" class="review-card__avatar">
+                            <div>
+                                <strong class="review-card__name">Дмитрий Волков</strong>
+                                <span class="review-card__date">Ноябрь 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="reviews-carousel__btn reviews-carousel__btn--prev" aria-label="Предыдущий отзыв">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="reviews-carousel__btn reviews-carousel__btn--next" aria-label="Следующий отзыв">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="reviews-carousel__dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="sec-title reveal">Частые вопросы</h2>
+
+            <div class="faq reveal-stagger">
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Можно ли привести питомца без записи?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Да, мы работаем без записи, но лучше позвонить заранее, чтобы избежать очередей. Для планового приёма рекомендуем записаться по телефону +7 (951) 095-45-10 или через WhatsApp.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Какие анализы можно сдать у вас?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>У нас есть собственная лаборатория, где выполняются все основные виды анализов: общий и биохимический анализ крови, анализ мочи, кала, соскобы кожи, цитология, гистология. Большинство результатов готовы в течение 30-60 минут.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Выезжаете ли вы на дом?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Да, наши ветеринары выезжают на дом круглосуточно. Стоимость выезда — от 2000 рублей в черте города. Мы можем провести осмотр, взять анализы, сделать инъекции, поставить капельницу на дому.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Какие документы нужны для первичного приёма?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Для первого визита возьмите с собой ветеринарный паспорт питомца (если есть), справку о прививках, результаты предыдущих анализов и обследований (если проводились). Если документов нет — не страшно, заведём новую карту.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Сколько стоит первичный приём?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Стоимость первичного приёма терапевта — 500 рублей. В стоимость входит осмотр, измерение температуры, консультация и рекомендации. Все диагностические процедуры и анализы оплачиваются отдельно.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Как долго питомец будет в стационаре после операции?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Это зависит от вида операции. После простых вмешательств (кастрация, стерилизация) животное обычно забирают в тот же день или на следующий. После сложных операций питомец находится в стационаре под круглосуточным наблюдением 2-5 дней.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Принимаете ли вы экзотических животных?</span>
+                        <i class="fas fa-chevron-down faq__icon"></i>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Да, у нас есть специалисты, которые работают с грызунами, птицами, рептилиями и другими экзотическими животными. Рекомендуем предварительно позвонить и уточнить наличие нужного врача в клинике.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-banner__inner reveal">
+                <div class="cta-banner__content">
+                    <h2 class="cta-banner__title">Запишитесь на приём прямо сейчас</h2>
+                    <p class="cta-banner__text">Или вызовите ветеринара на дом — работаем круглосуточно</p>
+                </div>
+                <div class="cta-banner__actions">
+                    <button class="btn btn--primary btn--large" id="ctaAppointmentBtn">
+                        <i class="fas fa-calendar-check"></i>
+                        Записаться онлайн
+                    </button>
+                    <a href="tel:+79510954510" class="btn btn--outline-white btn--large">
+                        <i class="fas fa-phone"></i>
+                        +7 (951) 095-45-10
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__col footer__col--brand">
+                    <div class="footer__logo">
+                        <i class="fas fa-paw"></i>
+                        <span>Центральная ветеринарная клиника</span>
+                    </div>
+                    <p class="footer__desc">Ветеринарная клиника полного цикла в Ульяновске. Работаем 10 лет.</p>
+                    <div class="footer__socials">
+                        
+                        <a href="https://wa.me/79510954510" class="footer__social" aria-label="WhatsApp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Навигация</h3>
+                    <nav class="footer__nav">
+                        <a href="index.html" class="footer__link">Главная</a>
+                        <a href="services.html" class="footer__link">Услуги</a>
+                        <a href="team.html" class="footer__link">Специалисты</a>
+                        <a href="prices.html" class="footer__link">Цены</a>
+                        <a href="about.html" class="footer__link">О клинике</a>
+                        <a href="contacts.html" class="footer__link">Контакты</a>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Популярные услуги</h3>
+                    <nav class="footer__nav">
+                        <a href="services.html#diagnostics" class="footer__link">Диагностика</a>
+                        <a href="services.html#surgery" class="footer__link">Хирургия</a>
+                        <a href="services.html#vaccination" class="footer__link">Вакцинация</a>
+                        <a href="services.html#dentistry" class="footer__link">Стоматология</a>
+                        <a href="services.html#grooming" class="footer__link">Груминг</a>
+                        <a href="services.html#hospital" class="footer__link">Стационар</a>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <div class="footer__contacts">
+                        <a href="tel:+79510954510" class="footer__contact">
+                            <i class="fas fa-phone"></i>
+                            +7 (951) 095-45-10
+                        </a>
+                        
+                        <p class="footer__contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Молочный пер., 16А, Ульяновск
+                        </p>
+                        <p class="footer__contact">
+                            <i class="fas fa-clock"></i>
+                            Пн-Сб: 9:00 – 21:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">© 2026 Центральная ветеринарная клиника. Все права защищены.</p>
+                <div class="footer__legal">
+                    
+                    <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING BUTTONS ========== -->
+    <a href="https://wa.me/79510954510" class="float-btn float-btn--whatsapp pulse-glow" aria-label="Написать в WhatsApp" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button class="float-btn float-btn--phone" id="floatCallBtn" aria-label="Позвонить">
+        <i class="fas fa-phone"></i>
+    </button>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ========== MODALS ========== -->
+    <!-- Appointment Modal -->
+    <div class="modal" id="appointmentModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal__title">Записаться на приём</h2>
+            <form class="form" id="appointmentForm">
+                <div class="form__group">
+                    <label for="clientName" class="form__label">Ваше имя *</label>
+                    <input type="text" id="clientName" class="form__input" required>
+                </div>
+                <div class="form__group">
+                    <label for="clientPhone" class="form__label">Телефон *</label>
+                    <input type="tel" id="clientPhone" class="form__input" required>
+                </div>
+                <div class="form__group">
+                    <label for="petType" class="form__label">Вид животного *</label>
+                    <select id="petType" class="form__input" required>
+                        <option value="">Выберите</option>
+                        <option value="dog">Собака</option>
+                        <option value="cat">Кошка</option>
+                        <option value="rodent">Грызун</option>
+                        <option value="bird">Птица</option>
+                        <option value="reptile">Рептилия</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label for="petName" class="form__label">Кличка питомца</label>
+                    <input type="text" id="petName" class="form__input">
+                </div>
+                <div class="form__group">
+                    <label for="serviceType" class="form__label">Причина обращения *</label>
+                    <textarea id="serviceType" class="form__input" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--large btn--full">
+                    Отправить заявку
+                </button>
+                <p class="form__note">Мы свяжемся с вами в течение 10 минут</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Call Request Modal -->
+    <div class="modal" id="callModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal__title">Заказать звонок</h2>
+            <form class="form" id="callForm">
+                <div class="form__group">
+                    <label for="callName" class="form__label">Ваше имя *</label>
+                    <input type="text" id="callName" class="form__input" required>
+                </div>
+                <div class="form__group">
+                    <label for="callPhone" class="form__label">Телефон *</label>
+                    <input type="tel" id="callPhone" class="form__input" required>
+                </div>
+                <button type="submit" class="btn btn--primary btn--large btn--full">
+                    Заказать звонок
+                </button>
+                <p class="form__note">Перезвоним в течение 5 минут</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
